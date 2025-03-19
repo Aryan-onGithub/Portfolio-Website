@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARYAN CHANDRA - Frontend Web Developer</title>
+  <meta name="description"
+    content="Hi, I'm Aryan Chandra, a Frontend web developer with a BCA degree and 2 years of experience. Explore my portfolio to learn more about my skills and feel free to contact me." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="ARYAN CHANDRA - Frontend Web Developer" />
+  <meta property="og:description"
+    content="Hi, I'm Aryan Chandra, a Frontend web developer with a BCA degree and 2 years of experience. Explore my portfolio to learn more about my skills and feel free to contact me." />
+  <meta property="og:image" itemprop="image" content="[YOUR OG IMAGE URL]" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="250" />
+  <meta property="og:image:height" content="138" />
+  <meta property="og:url" content="[YOUR PORTFOLIO URL]" />
+  <link rel="icon" type="image/x-icon" href="./media/favicon.jpg" />
+
+  <!-- Link Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+
+  <!-- Link Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Link FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
+
+  <!-- Plausible Analytics -->
+  <script defer data-domain="[YOUR DOMAIN NAME]"
+    src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <a href="#" class="logo">
+        <!-- <img src="./media/logo.png" alt="" /> -->
+        ARYAN CHANDRA
+      </a>
+      <button class="mobile_menu_btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="navlinks">
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <section id="intro" class="front">
+      <video autoplay muted loop src="./media/bg_video2.mp4" id="bg_video"></video>
+
+      <img src="./media/bg_static2.png" alt="" id="bg_image" />
+
+      <div class="two_sections">
+        <!-- Left Section -->
+        <section class="section">
+          <h1 data-aos="fade-up" data-aos-offset="10" data-aos-duration="900">
+            ARYAN<span data-aos="fade-right" data-aos-offset="10" data-aos-duration="1000">CHANDRA</span>
+          </h1>
+          <h2 data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+            I am a <span id="type_text"></span>
+          </h2>
+          <div class="buttons_group">
+            <a href="#about" data-aos="fade-up">Know About Me</a>
+            <a href="./media/cv.pdf" target="_blank" data-aos="fade-up" data-aos-delay="200">Download CV</a>
+          </div>
+        </section>
+        <!-- Right Section -->
+        <section class="section content_section">
+          <div id="about_container" class="category category1 active" data-aos="fade" data-aos-duration="1000"
+            data-aos-delay="1200">
+            <h3 style="display: none">About Me</h3>
+            <span>〈intro〉</span>
+            <p id="front_about_text"></p>
+            <span>〈/intro〉</span>
+          </div>
+          <div id="portfolio_container" class="category category2">
+            <h3 style="display: none">Portfolio</h3>
+            <span>print(portfolio);</span>
+            <div id="carousel1" class="carousel slide front_carousel" data-bs-ride="carousel" data-bs-interval="3000">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <!-- Add more buttons if you have more portfolio items -->
+              </div>
+              <div class="carousel-inner">
+                <!-- C Item 1 -->
+                <div class="carousel-item active">
+                  <div class="carousel-item-content">
+                    <img src="./media/portfolio/project1_screenshot.jpg" <!-- Replace with your project 1 screenshot -->
+                    class="d-block w-100"
+                    alt="Project 1"
+                    />
+                    <div class="carousel-item-content-text">
+                      <h3>Project 1</h3> <!-- Replace with Project 1 name -->
+                      <p>Description of Project 1. Technologies used.</p>
+                      <button onclick="viewPortfolio(0, 0)">Details</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- C Item 2 -->
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <img src="./media/portfolio/project2_screenshot.jpg" <!-- Replace with your project 2 screenshot -->
+                    class="d-block w-100"
+                    alt="Project 2"
+                    />
+                    <div class="carousel-item-content-text">
+                      <h3>Project 2</h3> <!-- Replace with Project 2 name -->
+                      <p>Description of Project 2. Technologies used.</p>
+                      <button onclick="viewPortfolio(0, 1)">Details</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Add more carousel items for your projects -->
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Toggle Buttons -->
+          <div id="toggle_buttons" data-aos="fade" data-aos-delay="1200">
+            <button id="toggle_button1" class="toggle_button active" onclick="toggleCategory(event)" data-category="1">
+              1
+            </button>
+            <span class="button_bar_between"></span>
+            
+          </div>
+        </section>
+      </div>
+
+      <img src="./media/scroll-down-icon.png" class="scroll-down-icon" alt="scroll down indicator" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section">
+          <h2 class="section_title" data-aos="fade-right">
+            About <span class="section_title_highlight">Me</span>
+          </h2>
+          <p class="section_info" data-aos="fade-up">
+            Hi! I am Aryan Chandra, a <span class="text_highlight">Frontend Web Developer</span> with a BCA degree and
+            <span class="text_highlight">2 years</span> of experience, based in [Your Location]. I'm passionate about
+            crafting beautiful and user-friendly web interfaces. My expertise includes HTML, CSS, JavaScript, and
+            various frontend frameworks. I thrive on creating engaging user experiences and I'm always eager to learn
+            and implement new technologies.
+          </p>
+        </div>
+        <div class="section">
+          <img src="media/Aryan dp.png" alt="Aryan Chandra" data-aos="fade-left" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section_title">
+          I <span class="section_title_highlight">specialize</span> in...
+        </h2>
+
+        <!-- Skill Cards -->
+        <div class="skill_cards">
+
+          <!-- Skill Card -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+            <img src="./media/icons/js.png" alt="JavaScript Logo" />
+            <div>
+              <span>JavaScript</span>
+              <span>Programming Language</span>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+            <img src="./media/icons/html5.png" alt="HTML5 Logo" />
+            <div>
+              <span>HTML5</span>
+              <span>structure</span>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill_card" data-aos="fade-up">
+            <img src="./media/icons/ccs3.png" alt="CSS3 Logo" />
+            <div>
+              <span>CSS3</span>
+              <span>Styling</span>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+            <img src="./media/icons/git.png" alt="Git Logo" />
+            <div>
+              <span>Git & GitHub</span>
+              <span>Version Control</span>
+            </div>
+          </div>
+
+          <!-- Skill Card -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+            <img src="./media/icons/responsive.png" alt="Responsive Design Logo" />
+            <div>
+              <span>Responsive Design</span>
+              <span>Web Design</span>
+            </div>
+          </div>
+
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+            <img src="./media/icons/angular.png" alt="Responsive Design Logo" />
+            <div>
+              <span>Angular</span>
+              <span>Front-end Framework</span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section_title small-screen-section_title">
+        <span class="section_title_highlight">Educational</span>
+        Qualification
+      </h2>
+      <div class="container">
+        <h2 class="section_title">
+          <span class="section_title_highlight">Educational</span>
+          Qualification
+        </h2>
+
+        <!-- Timeline -->
+        <div class="education_timeline">
+          <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220">CBSE 10th [2019]</span>
+          <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220"
+            data-aos-delay="100">CBSE 12th [2021]</span>
+          <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220"
+            data-aos-delay="200">BCA [2024]</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section_title">
+          <span class="section_title_highlight">Portfolio</span>
+        </h2>
+        <div class="portfolio">
+          <!-- Portfolio Nav -->
+          <nav class="portfolio_nav">
+            <ul>
+              <li>
+                <button class="pfoNavBtn pfoWebBtn" onclick="pfoWeb()" data-aos="fade-up" data-aos-delay="0"
+                  data-aos-offset="200">
+                  Web Design/Development
+                </button>
+              </li>
+              
+            </ul>
+          </nav>
+
+          <!-- Portfolio Items -->
+          <div class="portfolio_items">
+            <!-- Portfolio Viewer -->
+            <div class="portfolio_viewer">
+              <span id="close_pv_btn" onclick="closePv()">×</span>
+            </div>
+
+            <!-- Video Viewer -->
+            <div class="video_viewer">
+              <span id="close_pv_btn" onclick="closeVv()">×</span>
+              <span class="loading_text lt2">Loading...</span>
+            </div>
+
+            <!-- Web Gallery -->
+            <div class="web_gallery" data-aos="fade" data-aos-delay="500" data-aos-offset="200"></div>
+
+            <!-- Photo Gallery -->
+            <div class="photo_gallery">
+              <!-- Add your graphics design images here if you have them -->
+            </div>
+
+            <!-- Video Gallery -->
+            <div class="video_gallery">
+              <!-- Add your video editing videos here if you have them -->
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section_title" data-aos="fade">
+          <span class="section_title_highlight">Services</span> I offer
+        </h2>
+        <p class="section_info">
+          I offer front-end web development services, to create clean, interactive, and user-friendly web applications.
+          Below is a list of my services.
+        </p>
+
+        <!-- Service Cards -->
+        <div class="service_cards">
+          <div class="service_card" data-aos="fade" data-aos-delay="0" data-aos-offset="200">
+            <!-- Service Card: Web Design -->
+            <div class="service_card_text">
+              <h4>Frontend Web Pages</h4>
+              <p>
+                I build modern and responsive user interfaces with a focus on performance and user experience.
+                Below is a glimpse
+                of what I can offer -
+              </p>
+              <ul>
+                <li>
+                  <strong>ReactJS Development:</strong> Develop dynamic and interactive user interfaces.
+                </li>
+                <li>
+                  <strong>Responsive Web Design:</strong> Create websites optimized for all devices and screen sizes.
+                </li>
+                <li>
+                  <strong>HTML/CSS Development:</strong> Build semantic HTML structures and visually appealing CSS
+                  styles.
+                </li>
+                <li>
+                  <strong>JavaScript Development:</strong> Develop interactive elements with JavaScript.
+                </li>
+                <li>
+                  <strong>UI/UX Implementation:</strong> Translate design wireframes into functional UI components.
+                </li>
+                <li>
+                  <strong>Performance Optimization:</strong> Improve website loading speeds and overall site performance
+                  for a seamless user
+                </li>
+                <li>
+                  <strong>Version Control (Git):</strong> Manage code changes and collaborate effectively using Git.
+                </li>
+                <li>
+                  <strong>Cross-Browser Compatibility:</strong> Ensure websites function consistently across different
+                  browsers.
+                </li>
+              </ul>
+            </div>
+            <a href="#contact">Get Your Quote</a>
+          </div>
+
+          <!-- Service Card: Graphics Design (Optional - Remove if not applicable) -->
+          <div class="service_card">
+            <div class="service_card_text">
+                <h4>Responsive Websites</h4>
+                <p>
+                    Crafting websites that seamlessly adapt to any device – from desktops to smartphones. We'll ensure your site looks and functions perfectly, providing an optimal user experience for all visitors.
+                </p>
+                <ul>
+                    <li>
+                        <strong>Mobile-First Design:</strong> Prioritizing the mobile experience for a responsive and fast-loading website.
+                    </li>
+                    <li>
+                        <strong>Cross-Browser Compatibility:</strong> Ensuring your website functions flawlessly on all major browsers.
+                    </li>
+                    <li>
+                        <strong>Performance Optimization:</strong>  Improving website speed and responsiveness for a superior user experience.
+                    </li>
+                </ul>
+            </div>
+            <a href="#contact">Get Your Quote</a>
+        </div>  
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+          <h2 class="section_title" data-aos="fade" data-aos-offset="50">
+              Let's say <span class="section_title_highlight">Hi!</span>
+          </h2>
+          <div class="contact_form_container">
+              <form
+                  action="https://formspree.io/f/xkgjooav" 
+                  method="POST"
+                  class="contact_form"
+                  data-aos="fade"
+              >
+                   <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                cols="30"
+                rows="10"
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+                  <button type="submit">Send</button>
+              </form>
+              <img src="./media/mailbox.svg" alt="" />
+          </div>
+      </div>
+  </section>
+
+    <!-- Socials -->
+    <section id="socials">
+      <div class="container social_handles_container">
+        <h4 data-aos="zoom-in-up">Handles</h4>
+
+        <!-- Social Handles -->
+        <div class="social_handles">
+          <a href="https://github.com/Aryan-onGithub" 
+            target="_blank"
+            data-aos="fade-up"
+            ><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/aryan-chandra-649135224/"
+            target="_blank"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            ><i class="fa-brands fa-linkedin-in"></i></a>
+          
+        </div>
+      </div>
+
+      <!-- Email -->
+      <span style="
+            display: block;
+            text-align: center;
+            padding: 40px 10px 0px;
+            color: white;
+            font-weight: bold;
+          " data-aos="fade" data-aos-delay="300">
+        ✉:
+        <a href="mailto:aryanprofessional498@gmail.com" 
+          style="color: #00c3ff; text-decoration: none; font-size: 18px"
+          >aryanprofessional498@gmail.com</a>
+      </span>
+    </section>
+
+    <!-- Cursor -->
+    <div id="cursor_outer"></div>
+    <div id="cursor_inner"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <span>Copyright © 2024 ARYAN CHANDRA</span>
+  </footer>
+
+  <!-- Link jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Link Typed.JS -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed("#type_text", {
+      strings: ["Frontend Web Developer", "UI/UX Enthusiast", "Web Developer"],
+      typeSpeed: 40,
+      backSpeed: 40,
+      loop: true,
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+
+</html>
