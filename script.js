@@ -173,6 +173,15 @@ var portfolioContent = [
       link: "#",
     },
    
+    {
+      image: "./media/htmlForm.gif",
+      name: "Form -> HTML",
+      languages: `<span style="background-color: red">Html</span>
+                `,
+      desc: "This form is a simple test built with HTML to demonstrate form functionality and HTML's capabilities. It's designed to be easily customizable with CSS and JavaScript, but those are intentionally omitted here.",
+      link: "https://github.com/Aryan-onGithub/Hotel-registration-form-with-HTML",
+    },
+   
   ]
 ];
 
