@@ -108,7 +108,7 @@ function typeText() {
           🏫: BCA Graduate (2024)<br/>
           💪🏻: Front-End Web dev<br/>
           ❤: 💻, 🏋️<br/>
-          ✉: <a href="mailto:aryanprofessional498@gmail.com"  style="color: white; text-decoration: none; font-size: 16px;">aryanprofessional498@gmail.com</a>
+          ✉: <a href="mailto:workwitharyan498@gmail.com"  style="color: white; text-decoration: none; font-size: 16px;">workwitharyan498@gmail.com</a>
           <br/>
           <div style="margin-bottom: 15px"></div>
           🔗: <a href="https://github.com/Aryan-onGithub" target="_blank" class="front_social_link">
