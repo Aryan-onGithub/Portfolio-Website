@@ -5,13 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARYAN CHANDRA - Frontend Web Developer</title>
+  <title>ARYAN CHANDRA - Full Stack Developer</title>
   <meta name="description"
-    content="Hi, I'm Aryan Chandra, a Frontend web developer with a BCA degree and 2 years of experience. Explore my portfolio to learn more about my skills and feel free to contact me." />
+    content="Hi, I'm Aryan Chandra, a Full Stack Developer & React Developer. Explore my portfolio to learn more about my projects and skills, and feel free to contact me." />
   <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="ARYAN CHANDRA - Frontend Web Developer" />
+  <meta property="og:title" content="ARYAN CHANDRA - Full Stack Developer" />
   <meta property="og:description"
-    content="Hi, I'm Aryan Chandra, a Frontend web developer with a BCA degree and 2 years of experience. Explore my portfolio to learn more about my skills and feel free to contact me." />
+    content="Hi, I'm Aryan Chandra, a Full Stack Developer & React Developer. Explore my portfolio to learn more about my projects and skills, and feel free to contact me." />
   <meta property="og:image" itemprop="image" content="[YOUR OG IMAGE URL]" />
   <meta property="og:type" content="website" />
   <meta property="og:image:type" content="image/png" />
@@ -63,7 +63,9 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#leadership">Leadership</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -109,19 +111,18 @@
                   aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <!-- Add more buttons if you have more portfolio items -->
               </div>
               <div class="carousel-inner">
                 <!-- C Item 1 -->
                 <div class="carousel-item active">
                   <div class="carousel-item-content">
-                    <img src="./media/portfolio/project1_screenshot.jpg" <!-- Replace with your project 1 screenshot -->
+                    <img src="./media/naturesampann.png"
                     class="d-block w-100"
-                    alt="Project 1"
+                    alt="Nature Sampann Website"
                     />
                     <div class="carousel-item-content-text">
-                      <h3>Project 1</h3> <!-- Replace with Project 1 name -->
-                      <p>Description of Project 1. Technologies used.</p>
+                      <h3>Nature Sampann Website</h3>
+                      <p>Official agro-commodity company website built with React.</p>
                       <button onclick="viewPortfolio(0, 0)">Details</button>
                     </div>
                   </div>
@@ -129,18 +130,31 @@
                 <!-- C Item 2 -->
                 <div class="carousel-item">
                   <div class="carousel-item-content">
-                    <img src="./media/portfolio/project2_screenshot.jpg" <!-- Replace with your project 2 screenshot -->
+                    <img src="./media/neoport.png"
                     class="d-block w-100"
-                    alt="Project 2"
+                    alt="NeoPort"
                     />
                     <div class="carousel-item-content-text">
-                      <h3>Project 2</h3> <!-- Replace with Project 2 name -->
-                      <p>Description of Project 2. Technologies used.</p>
+                      <h3>NeoPort</h3>
+                      <p>Modern startup landing page for digital talent services.</p>
                       <button onclick="viewPortfolio(0, 1)">Details</button>
                     </div>
                   </div>
                 </div>
-                <!-- Add more carousel items for your projects -->
+                <!-- C Item 3 -->
+                <div class="carousel-item">
+                  <div class="carousel-item-content">
+                    <img src="./media/quiz_app_type2_ss.png"
+                    class="d-block w-100"
+                    alt="IP Case Tracker"
+                    />
+                    <div class="carousel-item-content-text">
+                      <h3>IP Case Tracker</h3>
+                      <p>Case tracking system with CRUD and workflow management.</p>
+                      <button onclick="viewPortfolio(0, 3)">Details</button>
+                    </div>
+                  </div>
+                </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -159,7 +173,9 @@
               1
             </button>
             <span class="button_bar_between"></span>
-            
+            <button id="toggle_button2" class="toggle_button" onclick="toggleCategory(event)" data-category="2">
+              2
+            </button>
           </div>
         </section>
       </div>
@@ -175,11 +191,7 @@
             About <span class="section_title_highlight">Me</span>
           </h2>
           <p class="section_info" data-aos="fade-up">
-            Hi! I am Aryan Chandra, a <span class="text_highlight">Frontend Web Developer</span> with a BCA degree and
-            <span class="text_highlight">2 years</span> of experience, based in Bareilly. I'm passionate about
-            crafting beautiful and user-friendly web interfaces. My expertise includes HTML, CSS, JavaScript, and
-            various frontend frameworks. I thrive on creating engaging user experiences and I'm always eager to learn
-            and implement new technologies.
+            Hi! I am Aryan Chandra, a <span class="text_highlight">Full Stack Developer</span>, <span class="text_highlight">React Developer</span>, and <span class="text_highlight">MERN Stack Enthusiast</span>. I am a BCA graduate from Invertis University with experience building React applications, business websites, CRUD systems, and digital solutions. I am currently pursuing a physical training program in MERN Stack at DUCAT (Noida Sector 63) to emerge as a Full Stack Web Developer. I am passionate about modern web development, problem-solving, and creating scalable, interactive user experiences.
           </p>
         </div>
         <div class="section">
@@ -195,10 +207,10 @@
           I <span class="section_title_highlight">specialize</span> in...
         </h2>
 
-        <!-- Skill Cards -->
+        <!-- Programming Languages -->
+        <h3 class="skills_category_title" data-aos="fade-right">Programming Languages</h3>
         <div class="skill_cards">
-
-          <!-- Skill Card -->
+          <!-- JavaScript -->
           <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
             <img src="./media/icons/js.png" alt="JavaScript Logo" />
             <div>
@@ -206,26 +218,65 @@
               <span>Programming Language</span>
             </div>
           </div>
-
-          <!-- Skill Card -->
+          <!-- Python -->
           <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-brands fa-python" style="color: #3776AB;"></i>
+            <div>
+              <span>Python</span>
+              <span>Programming Language</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Frontend</h3>
+        <div class="skill_cards">
+          <!-- HTML -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
             <img src="./media/icons/html5.png" alt="HTML5 Logo" />
             <div>
               <span>HTML5</span>
-              <span>structure</span>
+              <span>Structure</span>
             </div>
           </div>
-
-          <!-- Skill Card -->
-          <div class="skill_card" data-aos="fade-up">
+          <!-- CSS -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
             <img src="./media/icons/ccs3.png" alt="CSS3 Logo" />
             <div>
               <span>CSS3</span>
               <span>Styling</span>
             </div>
           </div>
+          <!-- React -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
+            <div>
+              <span>React</span>
+              <span>Frontend Library</span>
+            </div>
+          </div>
+          <!-- Bootstrap -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i>
+            <div>
+              <span>Bootstrap</span>
+              <span>CSS Framework</span>
+            </div>
+          </div>
+          <!-- Tailwind CSS -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="500">
+            <i class="fa-solid fa-wind" style="color: #38BDF8;"></i>
+            <div>
+              <span>Tailwind CSS</span>
+              <span>CSS Framework</span>
+            </div>
+          </div>
+        </div>
 
-          <!-- Skill Card -->
+        <!-- Tools -->
+        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Tools</h3>
+        <div class="skill_cards">
+          <!-- Git/GitHub -->
           <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
             <img src="./media/icons/git.png" alt="Git Logo" />
             <div>
@@ -233,25 +284,67 @@
               <span>Version Control</span>
             </div>
           </div>
-
-          <!-- Skill Card -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <img src="./media/icons/responsive.png" alt="Responsive Design Logo" />
+          <!-- Figma -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-brands fa-figma" style="color: #F24E1E;"></i>
             <div>
-              <span>Responsive Design</span>
-              <span>Web Design</span>
+              <span>Figma</span>
+              <span>UI/UX Design</span>
             </div>
           </div>
-
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <img src="./media/icons/angular.png" alt="Responsive Design Logo" />
+          <!-- Photoshop -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-palette" style="color: #31A8FF;"></i>
             <div>
-              <span>Angular</span>
-              <span>Front-end Framework</span>
-
+              <span>Photoshop</span>
+              <span>Graphics Editor</span>
             </div>
           </div>
+          <!-- Excel -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-file-excel" style="color: #107C41;"></i>
+            <div>
+              <span>Excel</span>
+              <span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
 
+        <!-- Soft Skills -->
+        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Soft Skills</h3>
+        <div class="skill_cards">
+          <!-- Communication -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fa-solid fa-comments" style="color: #FFB03A;"></i>
+            <div>
+              <span>Communication</span>
+              <span>Soft Skill</span>
+            </div>
+          </div>
+          <!-- Teamwork -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fa-solid fa-users" style="color: #34D399;"></i>
+            <div>
+              <span>Teamwork</span>
+              <span>Collaboration</span>
+            </div>
+          </div>
+          <!-- Problem Solving -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+            <i class="fa-solid fa-lightbulb" style="color: #F59E0B;"></i>
+            <div>
+              <span>Problem Solving</span>
+              <span>Analytical</span>
+            </div>
+          </div>
+          <!-- Leadership -->
+          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+            <i class="fa-solid fa-crown" style="color: #FBBF24;"></i>
+            <div>
+              <span>Leadership</span>
+              <span>Management</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -271,11 +364,89 @@
 
         <!-- Timeline -->
         <div class="education_timeline">
-          <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220">CBSE 10th [2019]</span>
+          <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220">12th (PCM) [2021]</span>
           <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220"
-            data-aos-delay="100">CBSE 12th [2021]</span>
+            data-aos-delay="100">BCA [2024]</span>
           <span class="education_timeline_tag" data-aos="fade-right" data-aos-offset="220"
-            data-aos-delay="200">BCA [2024]</span>
+            data-aos-delay="200">MERN Training [Present]</span>
+        </div>
+
+        <!-- Detailed Education Cards -->
+        <div class="education_cards" style="margin-top: 50px; display: flex; flex-direction: row; justify-content: center; gap: 30px; flex-wrap: wrap; width: 100%;">
+          <div class="education_card" data-aos="fade-up" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 20px; border-radius: 8px; width: 30%; min-width: 280px; flex-grow: 1; box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.15); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h4 style="color: #00f7ff; margin-bottom: 5px; font-size: 1.4rem;">MERN Stack Training Program</h4>
+              <h5 style="color: white; margin-bottom: 10px; font-weight: normal; font-size: 1.1rem;">DUCAT (Noida Sector 63)</h5>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; display: block; margin-bottom: 10px;">Aug 2024 – Present</span>
+            </div>
+            <p style="color: rgba(255, 255, 255, 0.85); margin: 0; font-size: 1.05rem; line-height: 1.6;">Pursuing physical training program for MERN stack, emerging into a fullstack web developer.</p>
+          </div>
+          <div class="education_card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 20px; border-radius: 8px; width: 30%; min-width: 280px; flex-grow: 1; box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.15); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h4 style="color: #00f7ff; margin-bottom: 5px; font-size: 1.4rem;">Bachelor of Computer Application (BCA)</h4>
+              <h5 style="color: white; margin-bottom: 10px; font-weight: normal; font-size: 1.1rem;">Invertis University</h5>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; display: block; margin-bottom: 10px;">Aug 2021 – Aug 2024</span>
+            </div>
+          </div>
+          <div class="education_card" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 20px; border-radius: 8px; width: 30%; min-width: 280px; flex-grow: 1; box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.15); display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <h4 style="color: #00f7ff; margin-bottom: 5px; font-size: 1.4rem;">12th (PCM), CBSE</h4>
+              <h5 style="color: white; margin-bottom: 10px; font-weight: normal; font-size: 1.1rem;">Bedi International School</h5>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; display: block; margin-bottom: 10px;">Feb 2020 – Apr 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="container">
+        <h2 class="section_title">
+          Professional <span class="section_title_highlight">Experience</span>
+        </h2>
+        
+        <div class="experience_cards" style="display: flex; flex-direction: column; gap: 30px; margin-top: 30px; width: 100%;">
+          
+          <!-- Experience Card 1 -->
+          <div class="experience_card" data-aos="fade-up" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 100%; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+              <div>
+                <h3 style="color: #00f7ff; margin: 0; font-size: 1.6rem; font-weight: 600;">Digital & Tech Operations Intern</h3>
+                <h4 style="color: white; margin: 5px 0 0; font-size: 1.2rem; font-weight: normal;">Nature Sampann — Remote / India</h4>
+              </div>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.1rem; background: rgba(0, 195, 255, 0.15); padding: 3px 10px; border-radius: 5px; border: 1px solid #00c3ff;">June 2025 – Present</span>
+            </div>
+            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
+              <li>Developed and maintained the Nature Sampann website using React.</li>
+              <li>Managed technical operations including website updates, troubleshooting, and digital tools.</li>
+              <li>Managed company email setup and digital workflows.</li>
+              <li>Supported social media and LinkedIn growth initiatives.</li>
+              <li>Improved overall digital presence.</li>
+            </ul>
+            <div>
+              <span style="color: #00c3ff; font-weight: bold;">Website:</span> 
+              <a href="https://naturesampann.com" target="_blank" style="color: #a9ceff; text-decoration: none; border-bottom: 1px dashed #00c3ff;">naturesampann.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 2px;"></i></a>
+            </div>
+          </div>
+
+          <!-- Experience Card 2 -->
+          <div class="experience_card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 100%; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
+              <div>
+                <h3 style="color: #00f7ff; margin: 0; font-size: 1.6rem; font-weight: 600;">Full Stack Developer (Freelance)</h3>
+                <h4 style="color: white; margin: 5px 0 0; font-size: 1.2rem; font-weight: normal;">Thrift Store Platform — Remote</h4>
+              </div>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.1rem; background: rgba(0, 195, 255, 0.15); padding: 3px 10px; border-radius: 5px; border: 1px solid #00c3ff;">2025</span>
+            </div>
+            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 0;">
+              <li>Built a full-stack e-commerce platform using React, Node.js, Express, and MariaDB.</li>
+              <li>Developed authentication, cart, checkout, and wishlist features.</li>
+              <li>Built inventory and order management systems.</li>
+              <li>Improved performance and SEO.</li>
+            </ul>
+          </div>
+          
         </div>
       </div>
     </section>
@@ -284,7 +455,7 @@
     <section id="portfolio">
       <div class="container">
         <h2 class="section_title">
-          <span class="section_title_highlight">Portfolio</span>
+          <span class="section_title_highlight">Projects</span>
         </h2>
         <div class="portfolio">
           <!-- Portfolio Nav -->
@@ -293,7 +464,7 @@
               <li>
                 <button class="pfoNavBtn pfoWebBtn" onclick="pfoWeb()" data-aos="fade-up" data-aos-delay="0"
                   data-aos-offset="200">
-                  Web Design/Development
+                  Web Development Projects
                 </button>
               </li>
               
@@ -326,6 +497,46 @@
               <!-- Add your video editing videos here if you have them -->
             </div> 
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Activities Section -->
+    <section id="leadership">
+      <div class="container">
+        <h2 class="section_title">
+          Leadership & <span class="section_title_highlight">Activities</span>
+        </h2>
+        
+        <div class="leadership_cards" style="display: flex; flex-direction: row; gap: 30px; margin-top: 30px; width: 100%; flex-wrap: wrap;">
+          
+          <!-- Leadership Card 1 -->
+          <div class="leadership_card" data-aos="fade-up" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 47%; min-width: 285px; flex-grow: 1; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.15);">
+            <div style="margin-bottom: 15px;">
+              <h3 style="color: #00f7ff; margin: 0; font-size: 1.5rem; font-weight: 600;">IoT Group Project</h3>
+              <h4 style="color: white; margin: 5px 0 0; font-size: 1.15rem; font-weight: normal;">Team Leader — Invertis University</h4>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1rem; display: block; margin-top: 5px;">Sept 2022 – Jan 2023</span>
+            </div>
+            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.7;">
+              <li>Led a team of 10 members to simulate a smart kitchen using Arduino Uno on Tinkercad.</li>
+              <li>Developed modules for gas detection (MQ2), smart exhaust fan (DHT11), and auto-lighting (PIR sensor).</li>
+              <li>Successfully managed project timelines, resources, and team members.</li>
+            </ul>
+          </div>
+
+          <!-- Leadership Card 2 -->
+          <div class="leadership_card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 47%; min-width: 285px; flex-grow: 1; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.15);">
+            <div style="margin-bottom: 15px;">
+              <h3 style="color: #00f7ff; margin: 0; font-size: 1.5rem; font-weight: 600;">I-Tech Club</h3>
+              <h4 style="color: white; margin: 5px 0 0; font-size: 1.15rem; font-weight: normal;">Team Member — Invertis University</h4>
+              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1rem; display: block; margin-top: 5px;">Jan 2022 – Feb 2023</span>
+            </div>
+            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.7;">
+              <li>Organized coding competitions (C++, C, Java, and Python) and technical workshops (Web3).</li>
+              <li>Contributed to organizing annual college events, planning, coordination, and execution.</li>
+            </ul>
+          </div>
+          
         </div>
       </div>
     </section>
@@ -421,18 +632,62 @@
                   class="contact_form"
                   data-aos="fade"
               >
-                   <input type="text" name="Name" placeholder="Name" required />
-              <input type="email" name="Email" placeholder="Email" required />
-              <textarea
-                cols="30"
-                rows="10"
-                name="Message"
-                placeholder="Message"
-                required
-              ></textarea>
+                  <input type="text" name="Name" placeholder="Name" required />
+                  <input type="email" name="Email" placeholder="Email" required />
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    name="Message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
                   <button type="submit">Send</button>
               </form>
-              <img src="./media/mailbox.svg" alt="" />
+              
+              <!-- Contact Details Card -->
+              <div class="contact_details_card" data-aos="fade" data-aos-delay="200" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00c3ff; padding: 25px 30px; border-radius: 5px; height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 20px; color: #25afff; font-family: 'Ubuntu Mono', sans-serif;">
+                <h3 style="color: white; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.8rem; border-bottom: 2px solid #00c3ff; padding-bottom: 10px; margin-bottom: 10px; font-weight: 600;">Contact Details</h3>
+                
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <i class="fa-solid fa-envelope" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
+                  <div>
+                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">EMAIL</span>
+                    <a href="mailto:workwitharyan498@gmail.com" style="color: white; text-decoration: none; font-size: 1.1rem;">workwitharyan498@gmail.com</a>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <i class="fa-solid fa-phone" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
+                  <div>
+                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">PHONE</span>
+                    <a href="tel:+917453849001" style="color: white; text-decoration: none; font-size: 1.1rem;">+91 74538 49001</a>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <i class="fa-solid fa-location-dot" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
+                  <div>
+                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">LOCATION</span>
+                    <span style="color: white; font-size: 1.1rem;">Ghaziabad, India</span>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <i class="fa-brands fa-github" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
+                  <div>
+                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">GITHUB</span>
+                    <a href="https://github.com/Aryan-onGithub" target="_blank" style="color: white; text-decoration: none; font-size: 1.1rem;">Aryan-onGithub</a>
+                  </div>
+                </div>
+
+                <div style="display: flex; align-items: center; gap: 15px;">
+                  <i class="fa-brands fa-linkedin-in" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
+                  <div>
+                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">LINKEDIN</span>
+                    <a href="https://www.linkedin.com/in/aryan-chandra/" target="_blank" style="color: white; text-decoration: none; font-size: 1.1rem;">aryan-chandra</a>
+                  </div>
+                </div>
+              </div>
           </div>
       </div>
   </section>
@@ -448,7 +703,7 @@
             target="_blank"
             data-aos="fade-up"
             ><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/aryan-chandra-649135224/"
+          <a href="https://www.linkedin.com/in/aryan-chandra/"
             target="_blank"
             data-aos="fade-up"
             data-aos-delay="300"
@@ -480,7 +735,8 @@
   <!-- Footer -->
   <footer id="footer">
     <div class="container">
-      <span>Copyright © 2024 ARYAN CHANDRA</span>
+      <span>Copyright © 2026 ARYAN CHANDRA</span>
+    </div>
   </footer>
 
   <!-- Link jquery -->
@@ -493,7 +749,7 @@
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed("#type_text", {
-      strings: ["Frontend Web Developer", "Web Developer"],
+      strings: ["Full Stack Developer", "React Developer", "MERN Stack Enthusiast"],
       typeSpeed: 40,
       backSpeed: 40,
       loop: true,

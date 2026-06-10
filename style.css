@@ -1853,3 +1853,103 @@ a > i:hover {
   mix-blend-mode: difference;
   pointer-events: none;
 }
+
+/* Skills Category Title Styling */
+.skills_category_title {
+  width: 100%;
+  color: #00c3ff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  font-family: "Ubuntu Mono", sans-serif;
+  border-left: 4px solid #00f7ff;
+  padding-left: 15px;
+  text-shadow: 0px 0px 5px rgba(0, 195, 255, 0.3);
+}
+
+/* Skill Card FontAwesome Icon Styling */
+.skill_card i {
+  font-size: 3.5rem;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Experience and Leadership Sections */
+#experience,
+#leadership {
+  background: #02000a;
+  min-height: max-content;
+}
+#experience .container,
+#leadership .container {
+  display: block;
+}
+
+/* Custom Projects Card Buttons & Tags Styling */
+.portfolio_item_btn {
+  margin: 0;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu Mono', sans-serif;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.portfolio_item_btn_details {
+  background: transparent;
+  border: 2px solid #030303;
+  color: #030303;
+}
+.portfolio_item_btn_details:hover {
+  background: #030303;
+  color: #00f7ff;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.portfolio_item_btn_demo {
+  background: #030303;
+  border: 2px solid #030303;
+  color: #00f7ff;
+}
+.portfolio_item_btn_demo:hover {
+  background: transparent;
+  color: #030303;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.portfolio_item_btn_github {
+  background: transparent;
+  border: 2px solid #030303;
+  color: #030303;
+}
+.portfolio_item_btn_github:hover {
+  background: #030303;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.portfolio_tag {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 3px;
+  font-family: 'Ubuntu Mono', sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+
