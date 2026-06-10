@@ -760,6 +760,38 @@
     border-right: 5px solid transparent;
   }
 
+  .education_cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .education_card {
+    width: 100% !important;
+    min-width: auto !important;
+    max-width: 560px;
+  }
+
+  #education .small-screen-section_title {
+    position: relative;
+    transform: none;
+    bottom: auto;
+    left: auto;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  .education_timeline {
+    width: 100%;
+    padding: 0 10px;
+    align-items: flex-start;
+  }
+
+  .education_timeline_tag {
+    width: 100%;
+    max-width: 340px;
+  }
+
   .pfoNavBtn {
     padding: 5px 8px;
     border-radius: 7px;
