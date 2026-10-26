@@ -1,973 +1,2048 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARYAN CHANDRA - Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Hi, I'm Aryan Chandra, a Full Stack Developer & React Developer. Explore my portfolio to learn more about my projects and skills, and feel free to contact me."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="ARYAN CHANDRA - Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Hi, I'm Aryan Chandra, a Full Stack Developer & React Developer. Explore my portfolio to learn more about my projects and skills, and feel free to contact me."
+    />
+    <meta property="og:image" itemprop="image" content="[YOUR OG IMAGE URL]" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="250" />
+    <meta property="og:image:height" content="138" />
+    <meta property="og:url" content="[YOUR PORTFOLIO URL]" />
+    <link rel="icon" type="image/x-icon" href="./media/favicon.jpg" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARYAN CHANDRA - Full Stack Developer</title>
-  <meta name="description"
-    content="Hi, I'm Aryan Chandra, a Full Stack Developer & React Developer. Explore my portfolio to learn more about my projects and skills, and feel free to contact me." />
-  <meta name="robots" content="index,follow" />
-  <meta property="og:title" content="ARYAN CHANDRA - Full Stack Developer" />
-  <meta property="og:description"
-    content="Hi, I'm Aryan Chandra, a Full Stack Developer & React Developer. Explore my portfolio to learn more about my projects and skills, and feel free to contact me." />
-  <meta property="og:image" itemprop="image" content="[YOUR OG IMAGE URL]" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="250" />
-  <meta property="og:image:height" content="138" />
-  <meta property="og:url" content="[YOUR PORTFOLIO URL]" />
-  <link rel="icon" type="image/x-icon" href="./media/favicon.jpg" />
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    />
 
-  <!-- Link Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Satisfy&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+    <!-- Link Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
 
-  <!-- Link Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <!-- Link FontAwesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="responsive.css" />
+    <!-- Plausible Analytics -->
+    <script
+      defer
+      data-domain="[YOUR DOMAIN NAME]"
+      src="https://plausible.io/js/script.file-downloads.outbound-links.js"
+    ></script>
+  </head>
 
-  <!-- Plausible Analytics -->
-  <script defer data-domain="[YOUR DOMAIN NAME]"
-    src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
-</head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- <img src="./media/logo.png" alt="" /> -->
+          ARYAN CHANDRA
+        </a>
+        <button class="mobile_menu_btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="navlinks">
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<body>
-  <!-- Header -->
-  <header id="header">
-    <div class="container">
-      <a href="#" class="logo">
-        <!-- <img src="./media/logo.png" alt="" /> -->
-        ARYAN CHANDRA
-      </a>
-      <button class="mobile_menu_btn">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-      <nav class="navlinks">
-        <ul>
-          <li><a href="#intro">Intro</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#leadership">Leadership</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Main -->
+    <main id="main">
+      <section id="intro" class="front">
+        <video
+          autoplay
+          muted
+          loop
+          src="./media/bg_video2.mp4"
+          id="bg_video"
+        ></video>
 
-  <!-- Main -->
-  <main id="main">
-    <section id="intro" class="front">
-      <video autoplay muted loop src="./media/bg_video2.mp4" id="bg_video"></video>
+        <img src="./media/bg_static2.png" alt="" id="bg_image" />
 
-      <img src="./media/bg_static2.png" alt="" id="bg_image" />
-
-      <div class="two_sections">
-        <!-- Left Section -->
-        <section class="section">
-          <h1 data-aos="fade-up" data-aos-offset="10" data-aos-duration="900">
-            ARYAN<span data-aos="fade-right" data-aos-offset="10" data-aos-duration="1000">CHANDRA</span>
-          </h1>
-          <h2 data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
-            I am a <span id="type_text"></span>
-          </h2>
-          <div class="buttons_group">
-            <a href="#about" data-aos="fade-up">Know About Me</a>
-            <a href="./media/cv.pdf" target="_blank" data-aos="fade-up" data-aos-delay="200">Download CV</a>
-          </div>
-        </section>
-        <!-- Right Section -->
-        <section class="section content_section">
-          <div id="about_container" class="category category1 active" data-aos="fade" data-aos-duration="1000"
-            data-aos-delay="1200">
-            <h3 style="display: none">About Me</h3>
-            <span>〈intro〉</span>
-            <p id="front_about_text"></p>
-            <span>〈/intro〉</span>
-          </div>
-          <div id="portfolio_container" class="category category2">
-            <h3 style="display: none">Portfolio</h3>
-            <span>print(portfolio);</span>
-            <div id="carousel1" class="carousel slide front_carousel" data-bs-ride="carousel" data-bs-interval="3000">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <!-- C Item 1 -->
-                <div class="carousel-item active">
-                  <div class="carousel-item-content">
-                    <img src="./media/naturesampann.png"
-                    class="d-block w-100"
-                    alt="Nature Sampann Website"
-                    />
-                    <div class="carousel-item-content-text">
-                      <h3>Nature Sampann Website</h3>
-                      <p>Official agro-commodity company website built with React.</p>
-                      <button onclick="viewPortfolio(0, 0)">Details</button>
+        <div class="two_sections">
+          <!-- Left Section -->
+          <section class="section">
+            <h1 data-aos="fade-up" data-aos-offset="10" data-aos-duration="900">
+              ARYAN<span
+                data-aos="fade-right"
+                data-aos-offset="10"
+                data-aos-duration="1000"
+                >CHANDRA</span
+              >
+            </h1>
+            <h2
+              data-aos="fade-right"
+              data-aos-delay="600"
+              data-aos-duration="1000"
+            >
+              I am a <span id="type_text"></span>
+            </h2>
+            <div class="buttons_group">
+              <a href="#about" data-aos="fade-up">Know About Me</a>
+              <a
+                href="./media/cv.pdf"
+                target="_blank"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                >Download CV</a
+              >
+            </div>
+          </section>
+          <!-- Right Section -->
+          <section class="section content_section">
+            <div
+              id="about_container"
+              class="category category1 active"
+              data-aos="fade"
+              data-aos-duration="1000"
+              data-aos-delay="1200"
+            >
+              <h3 style="display: none">About Me</h3>
+              <span>〈intro〉</span>
+              <p id="front_about_text"></p>
+              <span>〈/intro〉</span>
+            </div>
+            <div id="portfolio_container" class="category category2">
+              <h3 style="display: none">Portfolio</h3>
+              <span>print(portfolio);</span>
+              <div
+                id="carousel1"
+                class="carousel slide front_carousel"
+                data-bs-ride="carousel"
+                data-bs-interval="3000"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carousel1"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <!-- C Item 1 -->
+                  <div class="carousel-item active">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/naturesampann.png"
+                        class="d-block w-100"
+                        alt="Nature Sampann Website"
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Nature Sampann Website</h3>
+                        <p>
+                          Official agro-commodity company website built with
+                          React.
+                        </p>
+                        <button onclick="viewPortfolio(0, 0)">Details</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="carousel-item active">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/AtelierVanderhoof.png"
+                        class="d-block w-100"
+                        alt="Atelier Vanderhoof"
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Atelier Vanderhoof</h3>
+                        <p>
+                          Atelier Vanderhoof is a responsive website concept for
+                          a luxury interior design and architecture studio. It
+                          features a minimalist, editorial design with a
+                          full-screen hero, featured project showcases, detailed
+                          service listings, a design process walkthrough, and a
+                          materials gallery, all built to smoothly guide
+                          visitors toward booking a private consultation.
+                        </p>
+                        <button onclick="viewPortfolio(0, 0)">Details</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- C Item 2 -->
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/thrustbatteries.png"
+                        class="d-block w-100"
+                        alt="Thrust Batteries"
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>Thrust Batteries</h3>
+                        <p>
+                          Corporate technology website built independently with
+                          HTML/CSS/JS.
+                        </p>
+                        <button onclick="viewPortfolio(0, 1)">Details</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- C Item 3 -->
+                  <div class="carousel-item">
+                    <div class="carousel-item-content">
+                      <img
+                        src="./media/neoport.png"
+                        class="d-block w-100"
+                        alt="NeoPort"
+                      />
+                      <div class="carousel-item-content-text">
+                        <h3>NeoPort</h3>
+                        <p>
+                          Modern startup landing page for digital talent
+                          services.
+                        </p>
+                        <button onclick="viewPortfolio(0, 2)">Details</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <!-- C Item 2 -->
-                <div class="carousel-item">
-                  <div class="carousel-item-content">
-                    <img src="./media/thrustbatteries.png"
-                    class="d-block w-100"
-                    alt="Thrust Batteries"
-                    />
-                    <div class="carousel-item-content-text">
-                      <h3>Thrust Batteries</h3>
-                      <p>Corporate technology website built independently with HTML/CSS/JS.</p>
-                      <button onclick="viewPortfolio(0, 1)">Details</button>
-                    </div>
-                  </div>
-                </div>
-                <!-- C Item 3 -->
-                <div class="carousel-item">
-                  <div class="carousel-item-content">
-                    <img src="./media/neoport.png"
-                    class="d-block w-100"
-                    alt="NeoPort"
-                    />
-                    <div class="carousel-item-content-text">
-                      <h3>NeoPort</h3>
-                      <p>Modern startup landing page for digital talent services.</p>
-                      <button onclick="viewPortfolio(0, 2)">Details</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Toggle Buttons -->
-          <div id="toggle_buttons" data-aos="fade" data-aos-delay="1200">
-            <button id="toggle_button1" class="toggle_button active" onclick="toggleCategory(event)" data-category="1">
-              1
-            </button>
-            <span class="button_bar_between"></span>
-            <button id="toggle_button2" class="toggle_button" onclick="toggleCategory(event)" data-category="2">
-              2
-            </button>
-          </div>
-        </section>
-      </div>
-
-      <img src="./media/scroll-down-icon.png" class="scroll-down-icon" alt="scroll down indicator" />
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <div class="section">
-          <h2 class="section_title" data-aos="fade-right">
-            About <span class="section_title_highlight">Me</span>
-          </h2>
-          <p class="section_info" data-aos="fade-up">
-            Hi! I am Aryan Chandra, a <span class="text_highlight">Full Stack Developer</span>, <span class="text_highlight">React Developer</span>, and <span class="text_highlight">MERN Stack Specialist</span>. I hold a Bachelor of Computer Application (BCA) from Invertis University and completed intensive MERN Stack & Backend Development Training at DUCAT. With professional hands-on experience building production websites for Nature Sampann, Thrust Batteries, Giant Scaff, and Maxonova, I specialize in crafting robust, responsive, and scalable web solutions using modern JavaScript, React, Node.js, Express, and MongoDB.
-          </p>
-        </div>
-        <div class="section">
-          <img src="media/Aryan dp.png" alt="Aryan Chandra" data-aos="fade-left" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <div class="container">
-        <h2 class="section_title">
-          I <span class="section_title_highlight">specialize</span> in...
-        </h2>
-
-        <!-- Programming Languages -->
-        <h3 class="skills_category_title" data-aos="fade-right">Programming Languages</h3>
-        <div class="skill_cards">
-          <!-- JavaScript -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <img src="./media/icons/js.png" alt="JavaScript Logo" />
-            <div>
-              <span>JavaScript</span>
-              <span>ES6+ & Async JS</span>
-            </div>
-          </div>
-          <!-- Python -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-brands fa-python" style="color: #3776AB;"></i>
-            <div>
-              <span>Python</span>
-              <span>Scripting & Logic</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Backend Development -->
-        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Backend Development</h3>
-        <div class="skill_cards">
-          <!-- Node.js -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-brands fa-node-js" style="color: #339933;"></i>
-            <div>
-              <span>Node.js</span>
-              <span>Backend Runtime</span>
-            </div>
-          </div>
-          <!-- Express.js -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-brands fa-node" style="color: #ffffff;"></i>
-            <div>
-              <span>Express.js</span>
-              <span>Web Framework</span>
-            </div>
-          </div>
-          <!-- RESTful APIs -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fa-solid fa-network-wired" style="color: #00c3ff;"></i>
-            <div>
-              <span>RESTful APIs</span>
-              <span>Routing & Middleware</span>
-            </div>
-          </div>
-          <!-- Authentication & JWT -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-solid fa-shield-halved" style="color: #10B981;"></i>
-            <div>
-              <span>Auth & Security</span>
-              <span>JWT & Cookies</span>
-            </div>
-          </div>
-          <!-- Cloudinary -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="500">
-            <i class="fa-solid fa-cloud-arrow-up" style="color: #38bdf8;"></i>
-            <div>
-              <span>Cloudinary</span>
-              <span>Media Integration</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Databases -->
-        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Databases</h3>
-        <div class="skill_cards">
-          <!-- MongoDB -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-leaf" style="color: #47A248;"></i>
-            <div>
-              <span>MongoDB</span>
-              <span>NoSQL Database</span>
-            </div>
-          </div>
-          <!-- Mongoose ODM -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-layer-group" style="color: #e11d48;"></i>
-            <div>
-              <span>Mongoose (ODM)</span>
-              <span>Schema & Modeling</span>
-            </div>
-          </div>
-          <!-- MongoDB Atlas / Compass -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fa-solid fa-compass" style="color: #00ED64;"></i>
-            <div>
-              <span>MongoDB Atlas</span>
-              <span>Cloud & Compass GUI</span>
-            </div>
-          </div>
-          <!-- CRUD Operations -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-solid fa-table-list" style="color: #00c3ff;"></i>
-            <div>
-              <span>CRUD Operations</span>
-              <span>Data Pipelines</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Frontend -->
-        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Frontend Development</h3>
-        <div class="skill_cards">
-          <!-- React -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
-            <div>
-              <span>React</span>
-              <span>Hooks, Context, Redux</span>
-            </div>
-          </div>
-          <!-- HTML5 -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
-            <img src="./media/icons/html5.png" alt="HTML5 Logo" />
-            <div>
-              <span>HTML5</span>
-              <span>Semantic Markup</span>
-            </div>
-          </div>
-          <!-- CSS3 -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
-            <img src="./media/icons/ccs3.png" alt="CSS3 Logo" />
-            <div>
-              <span>CSS3</span>
-              <span>Modern Layouts</span>
-            </div>
-          </div>
-          <!-- Tailwind CSS -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-solid fa-wind" style="color: #38BDF8;"></i>
-            <div>
-              <span>Tailwind CSS</span>
-              <span>CSS Framework</span>
-            </div>
-          </div>
-          <!-- Bootstrap -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="500">
-            <i class="fa-brands fa-bootstrap" style="color: #7952B3;"></i>
-            <div>
-              <span>Bootstrap</span>
-              <span>CSS Framework</span>
-            </div>
-          </div>
-          <!-- WordPress -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="600">
-            <i class="fa-brands fa-wordpress" style="color: #21759B;"></i>
-            <div>
-              <span>WordPress</span>
-              <span>CMS & Customization</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools & Deployment -->
-        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Tools & Deployment</h3>
-        <div class="skill_cards">
-          <!-- Git/GitHub -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <img src="./media/icons/git.png" alt="Git Logo" />
-            <div>
-              <span>Git & GitHub</span>
-              <span>Version Control</span>
-            </div>
-          </div>
-          <!-- Postman -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-paper-plane" style="color: #FF6C37;"></i>
-            <div>
-              <span>Postman</span>
-              <span>API Testing</span>
-            </div>
-          </div>
-          <!-- Deployment Platforms -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fa-solid fa-cloud" style="color: #00f7ff;"></i>
-            <div>
-              <span>Deployment</span>
-              <span>Netlify, Vercel, Hostinger</span>
-            </div>
-          </div>
-          <!-- Figma -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-brands fa-figma" style="color: #F24E1E;"></i>
-            <div>
-              <span>Figma</span>
-              <span>UI/UX Design</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Soft Skills -->
-        <h3 class="skills_category_title" data-aos="fade-right" style="margin-top: 40px;">Soft Skills</h3>
-        <div class="skill_cards">
-          <!-- Problem Solving -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
-            <i class="fa-solid fa-lightbulb" style="color: #F59E0B;"></i>
-            <div>
-              <span>Problem Solving</span>
-              <span>Analytical Mindset</span>
-            </div>
-          </div>
-          <!-- Communication -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
-            <i class="fa-solid fa-comments" style="color: #FFB03A;"></i>
-            <div>
-              <span>Communication</span>
-              <span>Clear & Effective</span>
-            </div>
-          </div>
-          <!-- Teamwork -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
-            <i class="fa-solid fa-users" style="color: #34D399;"></i>
-            <div>
-              <span>Teamwork</span>
-              <span>Cross-Functional</span>
-            </div>
-          </div>
-          <!-- Leadership -->
-          <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
-            <i class="fa-solid fa-crown" style="color: #FBBF24;"></i>
-            <div>
-              <span>Leadership</span>
-              <span>Project Coordination</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <div class="container">
-        <h2 class="section_title" data-aos="fade-right">
-          Educational <span class="section_title_highlight">Qualification</span>
-        </h2>
-
-        <!-- Timeline Badges -->
-        <div class="education_timeline" data-aos="fade-up">
-          <span class="education_timeline_tag"><i class="fa-solid fa-graduation-cap"></i> 12th PCM [2021]</span>
-          <span class="education_timeline_tag"><i class="fa-solid fa-user-graduate"></i> BCA [2021 – 2024]</span>
-          <span class="education_timeline_tag"><i class="fa-solid fa-code"></i> MERN Training [Sept 2026]</span>
-        </div>
-
-        <!-- Detailed Education Cards -->
-        <div class="education_cards">
-          <!-- Card 1: DUCAT -->
-          <div class="education_card" data-aos="fade-up">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-                <h4 style="color: #00f7ff; margin: 0; font-size: 1.35rem; font-weight: 600;">MERN Stack & Backend Development</h4>
-                <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 0.95rem; background: rgba(0, 195, 255, 0.15); padding: 2px 8px; border-radius: 4px; border: 1px solid #00c3ff;">3-Month Program, Sept 2026</span>
-              </div>
-              <h5 style="color: white; margin-bottom: 12px; font-weight: 500; font-size: 1.1rem;">DUCAT Institute — India</h5>
-              <p style="color: rgba(255, 255, 255, 0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 12px;">
-                Specialized program in Node.js, Express.js, MongoDB, Mongoose ODM, RESTful API development, JWT authentication, cookies, route mounting, middleware, and Cloudinary media upload integration.
-              </p>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;">
-              <span class="portfolio_tag" style="background-color: #339933; color: white">Node.js</span>
-              <span class="portfolio_tag" style="background-color: #303030; color: white">Express.js</span>
-              <span class="portfolio_tag" style="background-color: #47A248; color: white">MongoDB</span>
-              <span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
-            </div>
-          </div>
-
-          <!-- Card 2: Invertis University -->
-          <div class="education_card" data-aos="fade-up" data-aos-delay="100">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-                <h4 style="color: #00f7ff; margin: 0; font-size: 1.35rem; font-weight: 600;">Bachelor of Computer Application (BCA)</h4>
-                <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 0.95rem; background: rgba(0, 195, 255, 0.15); padding: 2px 8px; border-radius: 4px; border: 1px solid #00c3ff;">Aug 2021 – Aug 2024</span>
-              </div>
-              <h5 style="color: white; margin-bottom: 12px; font-weight: 500; font-size: 1.1rem;">Invertis University — Bareilly, India</h5>
-              <p style="color: rgba(255, 255, 255, 0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 12px;">
-                Graduated with a solid foundation in computer applications, covering data structures, database management systems (DBMS), object-oriented programming, and web technologies.
-              </p>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;">
-              <span class="portfolio_tag" style="background-color: #00758f; color: white">DBMS</span>
-              <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
-              <span class="portfolio_tag" style="background-color: #3776AB; color: white">Python</span>
-              <span class="portfolio_tag" style="background-color: #1572b6; color: white">Data Structures</span>
-            </div>
-          </div>
-
-          <!-- Card 3: Schooling -->
-          <div class="education_card" data-aos="fade-up" data-aos-delay="200">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px; margin-bottom: 10px;">
-                <h4 style="color: #00f7ff; margin: 0; font-size: 1.35rem; font-weight: 600;">12th (PCM), CBSE</h4>
-                <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 0.95rem; background: rgba(0, 195, 255, 0.15); padding: 2px 8px; border-radius: 4px; border: 1px solid #00c3ff;">Feb 2020 – Apr 2021</span>
-              </div>
-              <h5 style="color: white; margin-bottom: 12px; font-weight: 500; font-size: 1.1rem;">Bedi International School — Bareilly, India</h5>
-              <p style="color: rgba(255, 255, 255, 0.85); font-size: 1rem; line-height: 1.6; margin-bottom: 12px;">
-                Completed Senior Secondary education with majors in Physics, Chemistry, and Mathematics (PCM) under the Central Board of Secondary Education.
-              </p>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px;">
-              <span class="portfolio_tag" style="background-color: #25afff; color: white">Mathematics</span>
-              <span class="portfolio_tag" style="background-color: #a855f7; color: white">Physics</span>
-              <span class="portfolio_tag" style="background-color: #06b6d4; color: white">CBSE Board</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Experience -->
-    <section id="experience">
-      <div class="container">
-        <h2 class="section_title">
-          Professional <span class="section_title_highlight">Experience</span>
-        </h2>
-        
-        <div class="experience_cards" style="display: flex; flex-direction: column; gap: 30px; margin-top: 30px; width: 100%;">
-          
-          <!-- Experience Card 1: Nature Sampann -->
-          <div class="experience_card" data-aos="fade-up" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 100%; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
-              <div>
-                <h3 style="color: #00f7ff; margin: 0; font-size: 1.6rem; font-weight: 600;">Software Developer (React)</h3>
-                <h4 style="color: white; margin: 5px 0 0; font-size: 1.2rem; font-weight: normal;">Nature Sampann — Remote / India</h4>
-              </div>
-              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.1rem; background: rgba(0, 195, 255, 0.15); padding: 3px 10px; border-radius: 5px; border: 1px solid #00c3ff;">June 2025 – Present</span>
-            </div>
-            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
-              <li>Developed and maintained the Nature Sampann website using React.</li>
-              <li>Handled website updates, troubleshooting, and technical SEO (meta tags, sitemaps, React Helmet).</li>
-              <li>Optimized web performance, component reusability, and responsive layouts across all viewports.</li>
-            </ul>
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-              <div>
-                <span style="color: #00c3ff; font-weight: bold;">Website:</span> 
-                <a href="https://naturesampann.com" target="_blank" style="color: #a9ceff; text-decoration: none; border-bottom: 1px dashed #00c3ff;">naturesampann.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 2px;"></i></a>
-              </div>
-              <div style="display: flex; gap: 5px; flex-wrap: wrap;">
-                <span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
-                <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
-                <span class="portfolio_tag" style="background-color: #10B981; color: white">Technical SEO</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Card 2: Thrust Batteries -->
-          <div class="experience_card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 100%; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
-              <div>
-                <h3 style="color: #00f7ff; margin: 0; font-size: 1.6rem; font-weight: 600;">Frontend Developer – Thrust Batteries</h3>
-                <h4 style="color: white; margin: 5px 0 0; font-size: 1.2rem; font-weight: normal;">Thrust Batteries — Freelance / Remote</h4>
-              </div>
-              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.1rem; background: rgba(0, 195, 255, 0.15); padding: 3px 10px; border-radius: 5px; border: 1px solid #00c3ff;">July 2026</span>
-            </div>
-            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
-              <li>Independently built the complete website from scratch using HTML, CSS, and JavaScript.</li>
-              <li>Engineered clean, interactive product showcases and high-conversion landing page layouts.</li>
-              <li>Ensured seamless responsiveness and cross-browser reliability across desktop and mobile devices.</li>
-            </ul>
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-              <div>
-                <span style="color: #00c3ff; font-weight: bold;">Website:</span> 
-                <a href="https://thrustbatteries.com" target="_blank" style="color: #a9ceff; text-decoration: none; border-bottom: 1px dashed #00c3ff;">thrustbatteries.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 2px;"></i></a>
-              </div>
-              <div style="display: flex; gap: 5px; flex-wrap: wrap;">
-                <span class="portfolio_tag" style="background-color: #e34f26; color: white">HTML5</span>
-                <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS3</span>
-                <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Card 3: Giant Scaff & Maxonova -->
-          <div class="experience_card" data-aos="fade-up" data-aos-delay="200" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 100%; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
-              <div>
-                <h3 style="color: #00f7ff; margin: 0; font-size: 1.6rem; font-weight: 600;">WordPress Developer – Giant Scaff & Maxonova</h3>
-                <h4 style="color: white; margin: 5px 0 0; font-size: 1.2rem; font-weight: normal;">Giant Scaff & Maxonova — Freelance / Remote</h4>
-              </div>
-              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.1rem; background: rgba(0, 195, 255, 0.15); padding: 3px 10px; border-radius: 5px; border: 1px solid #00c3ff;">June – July 2026</span>
-            </div>
-            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
-              <li>Built and customized company websites using WordPress.</li>
-              <li>Engineered custom layouts, content architectures, inquiry forms, and mobile-friendly themes.</li>
-              <li>Delivered complete end-to-end site setup with fast hosting configuration.</li>
-            </ul>
-            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-              <div>
-                <span style="color: #00c3ff; font-weight: bold;">Websites:</span> 
-                <a href="https://giantscaff.com" target="_blank" style="color: #a9ceff; text-decoration: none; border-bottom: 1px dashed #00c3ff;">giantscaff.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 2px;"></i></a>
-                <span style="color: white; margin: 0 5px;">—</span>
-                <a href="https://maxonova.com" target="_blank" style="color: #a9ceff; text-decoration: none; border-bottom: 1px dashed #00c3ff;">maxonova.com <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem; margin-left: 2px;"></i></a>
-              </div>
-              <div style="display: flex; gap: 5px; flex-wrap: wrap;">
-                <span class="portfolio_tag" style="background-color: #21759B; color: white">WordPress</span>
-                <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
-                <span class="portfolio_tag" style="background-color: #25afff; color: white">Responsive</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Experience Card 4: Thrift Store Platform -->
-          <div class="experience_card" data-aos="fade-up" data-aos-delay="300" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 100%; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
-              <div>
-                <h3 style="color: #00f7ff; margin: 0; font-size: 1.6rem; font-weight: 600;">Full Stack Developer (Freelance)</h3>
-                <h4 style="color: white; margin: 5px 0 0; font-size: 1.2rem; font-weight: normal;">Thrift Store Platform — Remote</h4>
-              </div>
-              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.1rem; background: rgba(0, 195, 255, 0.15); padding: 3px 10px; border-radius: 5px; border: 1px solid #00c3ff;">2025</span>
-            </div>
-            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.8; margin-bottom: 15px;">
-              <li>Built a full-stack e-commerce platform using React, Node.js, Express, and MariaDB.</li>
-              <li>Developed authentication, cart, checkout, and wishlist features.</li>
-              <li>Built inventory and order management systems.</li>
-            </ul>
-            <div style="display: flex; justify-content: flex-end; gap: 5px; flex-wrap: wrap;">
-              <span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
-              <span class="portfolio_tag" style="background-color: #339933; color: white">Node.js</span>
-              <span class="portfolio_tag" style="background-color: #303030; color: white">Express</span>
-              <span class="portfolio_tag" style="background-color: #00758f; color: white">MariaDB</span>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section id="portfolio">
-      <div class="container">
-        <h2 class="section_title">
-          <span class="section_title_highlight">Projects</span>
-        </h2>
-        <div class="portfolio">
-          <!-- Portfolio Nav -->
-          <nav class="portfolio_nav">
-            <ul>
-              <li>
-                <button class="pfoNavBtn pfoWebBtn" onclick="pfoWeb()" data-aos="fade-up" data-aos-delay="0"
-                  data-aos-offset="200">
-                  Web Development Projects
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
                 </button>
-              </li>
-              
-            </ul>
-          </nav>
-
-          <!-- Portfolio Items -->
-          <div class="portfolio_items">
-            <!-- Portfolio Viewer -->
-            <div class="portfolio_viewer">
-              <span id="close_pv_btn" onclick="closePv()">×</span>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carousel1"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
 
-            <!-- Video Viewer -->
-            <div class="video_viewer">
-              <span id="close_pv_btn" onclick="closeVv()">×</span>
-              <span class="loading_text lt2">Loading...</span>
+            <!-- Toggle Buttons -->
+            <div id="toggle_buttons" data-aos="fade" data-aos-delay="1200">
+              <button
+                id="toggle_button1"
+                class="toggle_button active"
+                onclick="toggleCategory(event)"
+                data-category="1"
+              >
+                1
+              </button>
+              <span class="button_bar_between"></span>
+              <button
+                id="toggle_button2"
+                class="toggle_button"
+                onclick="toggleCategory(event)"
+                data-category="2"
+              >
+                2
+              </button>
             </div>
+          </section>
+        </div>
 
-            <!-- Web Gallery -->
-            <div class="web_gallery" data-aos="fade" data-aos-delay="500" data-aos-offset="200"></div>
+        <img
+          src="./media/scroll-down-icon.png"
+          class="scroll-down-icon"
+          alt="scroll down indicator"
+        />
+      </section>
 
-            <!-- Photo Gallery -->
-            <div class="photo_gallery">
-              <!-- Add your graphics design images here if you have them -->
-            </div>
-
-            <!-- Video Gallery -->
-            <div class="video_gallery">
-              <!-- Add your video editing videos here if you have them -->
-            </div> 
+      <!-- About Section -->
+      <section id="about">
+        <div class="container">
+          <div class="section">
+            <h2 class="section_title" data-aos="fade-right">
+              About <span class="section_title_highlight">Me</span>
+            </h2>
+            <p class="section_info" data-aos="fade-up">
+              Hi! I am Aryan Chandra, a
+              <span class="text_highlight">Full Stack Developer</span>,
+              <span class="text_highlight">React Developer</span>, and
+              <span class="text_highlight">MERN Stack Specialist</span>. I hold
+              a Bachelor of Computer Application (BCA) from Invertis University
+              and completed intensive MERN Stack & Backend Development Training
+              at DUCAT. With professional hands-on experience building
+              production websites for Nature Sampann, Thrust Batteries, Giant
+              Scaff, and Maxonova, I specialize in crafting robust, responsive,
+              and scalable web solutions using modern JavaScript, React,
+              Node.js, Express, and MongoDB.
+            </p>
+          </div>
+          <div class="section">
+            <img
+              src="media/Aryan dp.png"
+              alt="Aryan Chandra"
+              data-aos="fade-left"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Leadership & Activities Section -->
-    <section id="leadership">
-      <div class="container">
-        <h2 class="section_title">
-          Leadership & <span class="section_title_highlight">Activities</span>
-        </h2>
-        
-        <div class="leadership_cards" style="display: flex; flex-direction: row; gap: 30px; margin-top: 30px; width: 100%; flex-wrap: wrap;">
-          
-          <!-- Leadership Card 1 -->
-          <div class="leadership_card" data-aos="fade-up" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 47%; min-width: 285px; flex-grow: 1; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.15);">
-            <div style="margin-bottom: 15px;">
-              <h3 style="color: #00f7ff; margin: 0; font-size: 1.5rem; font-weight: 600;">IoT Group Project</h3>
-              <h4 style="color: white; margin: 5px 0 0; font-size: 1.15rem; font-weight: normal;">Team Leader — Invertis University</h4>
-              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1rem; display: block; margin-top: 5px;">Sept 2022 – Jan 2023</span>
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="container">
+          <h2 class="section_title">
+            I <span class="section_title_highlight">specialize</span> in...
+          </h2>
+
+          <!-- Programming Languages -->
+          <h3 class="skills_category_title" data-aos="fade-right">
+            Programming Languages
+          </h3>
+          <div class="skill_cards">
+            <!-- JavaScript -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./media/icons/js.png" alt="JavaScript Logo" />
+              <div>
+                <span>JavaScript</span>
+                <span>ES6+ & Async JS</span>
+              </div>
             </div>
-            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.7;">
-              <li>Led a team of 10 members to simulate a smart kitchen using Arduino Uno on Tinkercad.</li>
-              <li>Developed modules for gas detection (MQ2), smart exhaust fan (DHT11), and auto-lighting (PIR sensor).</li>
-              <li>Successfully managed project timelines, resources, and team members.</li>
-            </ul>
+            <!-- Python -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-brands fa-python" style="color: #3776ab"></i>
+              <div>
+                <span>Python</span>
+                <span>Scripting & Logic</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Leadership Card 2 -->
-          <div class="leadership_card" data-aos="fade-up" data-aos-delay="100" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00f7ff; padding: 25px; border-radius: 8px; width: 47%; min-width: 285px; flex-grow: 1; box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.15);">
-            <div style="margin-bottom: 15px;">
-              <h3 style="color: #00f7ff; margin: 0; font-size: 1.5rem; font-weight: 600;">I-Tech Club</h3>
-              <h4 style="color: white; margin: 5px 0 0; font-size: 1.15rem; font-weight: normal;">Team Member — Invertis University</h4>
-              <span style="color: #a9ceff; font-family: 'Ubuntu Mono', sans-serif; font-size: 1rem; display: block; margin-top: 5px;">Jan 2022 – Feb 2023</span>
+          <!-- Backend Development -->
+          <h3
+            class="skills_category_title"
+            data-aos="fade-right"
+            style="margin-top: 40px"
+          >
+            Backend Development
+          </h3>
+          <div class="skill_cards">
+            <!-- Node.js -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-brands fa-node-js" style="color: #339933"></i>
+              <div>
+                <span>Node.js</span>
+                <span>Backend Runtime</span>
+              </div>
             </div>
-            <ul style="list-style-type: disc; padding-left: 20px; color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; line-height: 1.7;">
-              <li>Organized coding competitions (C++, C, Java, and Python) and technical workshops (Web3).</li>
-              <li>Contributed to organizing annual college events, planning, coordination, and execution.</li>
-            </ul>
+            <!-- Express.js -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-brands fa-node" style="color: #ffffff"></i>
+              <div>
+                <span>Express.js</span>
+                <span>Web Framework</span>
+              </div>
+            </div>
+            <!-- RESTful APIs -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-network-wired" style="color: #00c3ff"></i>
+              <div>
+                <span>RESTful APIs</span>
+                <span>Routing & Middleware</span>
+              </div>
+            </div>
+            <!-- Authentication & JWT -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-shield-halved" style="color: #10b981"></i>
+              <div>
+                <span>Auth & Security</span>
+                <span>JWT & Cookies</span>
+              </div>
+            </div>
+            <!-- Cloudinary -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="500">
+              <i class="fa-solid fa-cloud-arrow-up" style="color: #38bdf8"></i>
+              <div>
+                <span>Cloudinary</span>
+                <span>Media Integration</span>
+              </div>
+            </div>
           </div>
-          
+
+          <!-- Databases -->
+          <h3
+            class="skills_category_title"
+            data-aos="fade-right"
+            style="margin-top: 40px"
+          >
+            Databases
+          </h3>
+          <div class="skill_cards">
+            <!-- MongoDB -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-leaf" style="color: #47a248"></i>
+              <div>
+                <span>MongoDB</span>
+                <span>NoSQL Database</span>
+              </div>
+            </div>
+            <!-- Mongoose ODM -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-layer-group" style="color: #e11d48"></i>
+              <div>
+                <span>Mongoose (ODM)</span>
+                <span>Schema & Modeling</span>
+              </div>
+            </div>
+            <!-- MongoDB Atlas / Compass -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-compass" style="color: #00ed64"></i>
+              <div>
+                <span>MongoDB Atlas</span>
+                <span>Cloud & Compass GUI</span>
+              </div>
+            </div>
+            <!-- CRUD Operations -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-table-list" style="color: #00c3ff"></i>
+              <div>
+                <span>CRUD Operations</span>
+                <span>Data Pipelines</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <h3
+            class="skills_category_title"
+            data-aos="fade-right"
+            style="margin-top: 40px"
+          >
+            Frontend Development
+          </h3>
+          <div class="skill_cards">
+            <!-- React -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-brands fa-react" style="color: #61dafb"></i>
+              <div>
+                <span>React</span>
+                <span>Hooks, Context, Redux</span>
+              </div>
+            </div>
+            <!-- HTML5 -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <img src="./media/icons/html5.png" alt="HTML5 Logo" />
+              <div>
+                <span>HTML5</span>
+                <span>Semantic Markup</span>
+              </div>
+            </div>
+            <!-- CSS3 -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+              <img src="./media/icons/ccs3.png" alt="CSS3 Logo" />
+              <div>
+                <span>CSS3</span>
+                <span>Modern Layouts</span>
+              </div>
+            </div>
+            <!-- Tailwind CSS -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-wind" style="color: #38bdf8"></i>
+              <div>
+                <span>Tailwind CSS</span>
+                <span>CSS Framework</span>
+              </div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="500">
+              <i class="fa-brands fa-bootstrap" style="color: #7952b3"></i>
+              <div>
+                <span>Bootstrap</span>
+                <span>CSS Framework</span>
+              </div>
+            </div>
+            <!-- WordPress -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="600">
+              <i class="fa-brands fa-wordpress" style="color: #21759b"></i>
+              <div>
+                <span>WordPress</span>
+                <span>CMS & Customization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Deployment -->
+          <h3
+            class="skills_category_title"
+            data-aos="fade-right"
+            style="margin-top: 40px"
+          >
+            Tools & Deployment
+          </h3>
+          <div class="skill_cards">
+            <!-- Git/GitHub -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <img src="./media/icons/git.png" alt="Git Logo" />
+              <div>
+                <span>Git & GitHub</span>
+                <span>Version Control</span>
+              </div>
+            </div>
+            <!-- Postman -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-paper-plane" style="color: #ff6c37"></i>
+              <div>
+                <span>Postman</span>
+                <span>API Testing</span>
+              </div>
+            </div>
+            <!-- Deployment Platforms -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-cloud" style="color: #00f7ff"></i>
+              <div>
+                <span>Deployment</span>
+                <span>Netlify, Vercel, Hostinger</span>
+              </div>
+            </div>
+            <!-- Figma -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-brands fa-figma" style="color: #f24e1e"></i>
+              <div>
+                <span>Figma</span>
+                <span>UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <h3
+            class="skills_category_title"
+            data-aos="fade-right"
+            style="margin-top: 40px"
+          >
+            Soft Skills
+          </h3>
+          <div class="skill_cards">
+            <!-- Problem Solving -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fa-solid fa-lightbulb" style="color: #f59e0b"></i>
+              <div>
+                <span>Problem Solving</span>
+                <span>Analytical Mindset</span>
+              </div>
+            </div>
+            <!-- Communication -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="200">
+              <i class="fa-solid fa-comments" style="color: #ffb03a"></i>
+              <div>
+                <span>Communication</span>
+                <span>Clear & Effective</span>
+              </div>
+            </div>
+            <!-- Teamwork -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="300">
+              <i class="fa-solid fa-users" style="color: #34d399"></i>
+              <div>
+                <span>Teamwork</span>
+                <span>Cross-Functional</span>
+              </div>
+            </div>
+            <!-- Leadership -->
+            <div class="skill_card" data-aos="fade-up" data-aos-delay="400">
+              <i class="fa-solid fa-crown" style="color: #fbbf24"></i>
+              <div>
+                <span>Leadership</span>
+                <span>Project Coordination</span>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Education -->
+      <section id="education">
+        <div class="container">
+          <h2 class="section_title" data-aos="fade-right">
+            Educational
+            <span class="section_title_highlight">Qualification</span>
+          </h2>
 
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <h2 class="section_title" data-aos="fade">
-          <span class="section_title_highlight">Services</span> I offer
-        </h2>
-        <p class="section_info">
-          I provide full-stack web development, modern frontend engineering, and custom WordPress solutions tailored to business needs and scalability. Below is an overview of my core services.
-        </p>
+          <!-- Timeline Badges -->
+          <div class="education_timeline" data-aos="fade-up">
+            <span class="education_timeline_tag"
+              ><i class="fa-solid fa-graduation-cap"></i> 12th PCM [2021]</span
+            >
+            <span class="education_timeline_tag"
+              ><i class="fa-solid fa-user-graduate"></i> BCA [2021 – 2024]</span
+            >
+            <span class="education_timeline_tag"
+              ><i class="fa-solid fa-code"></i> MERN Training [Sept 2026]</span
+            >
+          </div>
 
-        <!-- Service Cards -->
-        <div class="service_cards">
-          <!-- Service Card 1: Full-Stack & MERN -->
-          <div class="service_card" data-aos="fade-up" data-aos-delay="0">
-            <div class="service_card_text">
-              <h4>Full-Stack & MERN Solutions</h4>
-              <p>
-                End-to-end web applications engineered with Node.js, Express, React, and MongoDB for scalable business workflows:
-              </p>
+          <!-- Detailed Education Cards -->
+          <div class="education_cards">
+            <!-- Card 1: DUCAT -->
+            <div class="education_card" data-aos="fade-up">
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <h4
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.35rem;
+                      font-weight: 600;
+                    "
+                  >
+                    MERN Stack & Backend Development
+                  </h4>
+                  <span
+                    style="
+                      color: #a9ceff;
+                      font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                      font-size: 0.95rem;
+                      background: rgba(0, 195, 255, 0.15);
+                      padding: 2px 8px;
+                      border-radius: 4px;
+                      border: 1px solid #00c3ff;
+                    "
+                    >3-Month Program, Sept 2026</span
+                  >
+                </div>
+                <h5
+                  style="
+                    color: white;
+                    margin-bottom: 12px;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                  "
+                >
+                  DUCAT Institute — India
+                </h5>
+                <p
+                  style="
+                    color: rgba(255, 255, 255, 0.85);
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 12px;
+                  "
+                >
+                  Specialized program in Node.js, Express.js, MongoDB, Mongoose
+                  ODM, RESTful API development, JWT authentication, cookies,
+                  route mounting, middleware, and Cloudinary media upload
+                  integration.
+                </p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 5px;
+                  margin-top: 10px;
+                "
+              >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #339933; color: white"
+                  >Node.js</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #303030; color: white"
+                  >Express.js</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #47a248; color: white"
+                  >MongoDB</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #61dafb; color: black"
+                  >React</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 2: Invertis University -->
+            <div class="education_card" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <h4
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.35rem;
+                      font-weight: 600;
+                    "
+                  >
+                    Bachelor of Computer Application (BCA)
+                  </h4>
+                  <span
+                    style="
+                      color: #a9ceff;
+                      font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                      font-size: 0.95rem;
+                      background: rgba(0, 195, 255, 0.15);
+                      padding: 2px 8px;
+                      border-radius: 4px;
+                      border: 1px solid #00c3ff;
+                    "
+                    >Aug 2021 – Aug 2024</span
+                  >
+                </div>
+                <h5
+                  style="
+                    color: white;
+                    margin-bottom: 12px;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                  "
+                >
+                  Invertis University — Bareilly, India
+                </h5>
+                <p
+                  style="
+                    color: rgba(255, 255, 255, 0.85);
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 12px;
+                  "
+                >
+                  Graduated with a solid foundation in computer applications,
+                  covering data structures, database management systems (DBMS),
+                  object-oriented programming, and web technologies.
+                </p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 5px;
+                  margin-top: 10px;
+                "
+              >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #00758f; color: white"
+                  >DBMS</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #f7df1e; color: black"
+                  >JavaScript</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #3776ab; color: white"
+                  >Python</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #1572b6; color: white"
+                  >Data Structures</span
+                >
+              </div>
+            </div>
+
+            <!-- Card 3: Schooling -->
+            <div class="education_card" data-aos="fade-up" data-aos-delay="200">
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    gap: 8px;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <h4
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.35rem;
+                      font-weight: 600;
+                    "
+                  >
+                    12th (PCM), CBSE
+                  </h4>
+                  <span
+                    style="
+                      color: #a9ceff;
+                      font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                      font-size: 0.95rem;
+                      background: rgba(0, 195, 255, 0.15);
+                      padding: 2px 8px;
+                      border-radius: 4px;
+                      border: 1px solid #00c3ff;
+                    "
+                    >Feb 2020 – Apr 2021</span
+                  >
+                </div>
+                <h5
+                  style="
+                    color: white;
+                    margin-bottom: 12px;
+                    font-weight: 500;
+                    font-size: 1.1rem;
+                  "
+                >
+                  Bedi International School — Bareilly, India
+                </h5>
+                <p
+                  style="
+                    color: rgba(255, 255, 255, 0.85);
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    margin-bottom: 12px;
+                  "
+                >
+                  Completed Senior Secondary education with majors in Physics,
+                  Chemistry, and Mathematics (PCM) under the Central Board of
+                  Secondary Education.
+                </p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 5px;
+                  margin-top: 10px;
+                "
+              >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #25afff; color: white"
+                  >Mathematics</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #a855f7; color: white"
+                  >Physics</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #06b6d4; color: white"
+                  >CBSE Board</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience">
+        <div class="container">
+          <h2 class="section_title">
+            Professional <span class="section_title_highlight">Experience</span>
+          </h2>
+
+          <div
+            class="experience_cards"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 30px;
+              margin-top: 30px;
+              width: 100%;
+            "
+          >
+            <!-- Experience Card 1: Nature Sampann -->
+            <div
+              class="experience_card"
+              data-aos="fade-up"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00f7ff;
+                padding: 25px;
+                border-radius: 8px;
+                width: 100%;
+                box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  margin-bottom: 15px;
+                "
+              >
+                <div>
+                  <h3
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.6rem;
+                      font-weight: 600;
+                    "
+                  >
+                    Software Developer (React)
+                  </h3>
+                  <h4
+                    style="
+                      color: white;
+                      margin: 5px 0 0;
+                      font-size: 1.2rem;
+                      font-weight: normal;
+                    "
+                  >
+                    Nature Sampann — Remote / India
+                  </h4>
+                </div>
+                <span
+                  style="
+                    color: #a9ceff;
+                    font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                    font-size: 1.1rem;
+                    background: rgba(0, 195, 255, 0.15);
+                    padding: 3px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #00c3ff;
+                  "
+                  >June 2025 – Present</span
+                >
+              </div>
+              <ul
+                style="
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: rgba(255, 255, 255, 0.85);
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  margin-bottom: 15px;
+                "
+              >
+                <li>
+                  Developed and maintained the Nature Sampann website using
+                  React.
+                </li>
+                <li>
+                  Handled website updates, troubleshooting, and technical SEO
+                  (meta tags, sitemaps, React Helmet).
+                </li>
+                <li>
+                  Optimized web performance, component reusability, and
+                  responsive layouts across all viewports.
+                </li>
+              </ul>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                "
+              >
+                <div>
+                  <span style="color: #00c3ff; font-weight: bold"
+                    >Website:</span
+                  >
+                  <a
+                    href="https://naturesampann.com"
+                    target="_blank"
+                    style="
+                      color: #a9ceff;
+                      text-decoration: none;
+                      border-bottom: 1px dashed #00c3ff;
+                    "
+                    >naturesampann.com
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="font-size: 0.8rem; margin-left: 2px"
+                    ></i
+                  ></a>
+                </div>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap">
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #61dafb; color: black"
+                    >React</span
+                  >
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #f7df1e; color: black"
+                    >JavaScript</span
+                  >
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #10b981; color: white"
+                    >Technical SEO</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card 2: Thrust Batteries -->
+            <div
+              class="experience_card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00f7ff;
+                padding: 25px;
+                border-radius: 8px;
+                width: 100%;
+                box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  margin-bottom: 15px;
+                "
+              >
+                <div>
+                  <h3
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.6rem;
+                      font-weight: 600;
+                    "
+                  >
+                    Frontend Developer – Thrust Batteries
+                  </h3>
+                  <h4
+                    style="
+                      color: white;
+                      margin: 5px 0 0;
+                      font-size: 1.2rem;
+                      font-weight: normal;
+                    "
+                  >
+                    Thrust Batteries — Freelance / Remote
+                  </h4>
+                </div>
+                <span
+                  style="
+                    color: #a9ceff;
+                    font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                    font-size: 1.1rem;
+                    background: rgba(0, 195, 255, 0.15);
+                    padding: 3px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #00c3ff;
+                  "
+                  >July 2026</span
+                >
+              </div>
+              <ul
+                style="
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: rgba(255, 255, 255, 0.85);
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  margin-bottom: 15px;
+                "
+              >
+                <li>
+                  Independently built the complete website from scratch using
+                  HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                  Engineered clean, interactive product showcases and
+                  high-conversion landing page layouts.
+                </li>
+                <li>
+                  Ensured seamless responsiveness and cross-browser reliability
+                  across desktop and mobile devices.
+                </li>
+              </ul>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                "
+              >
+                <div>
+                  <span style="color: #00c3ff; font-weight: bold"
+                    >Website:</span
+                  >
+                  <a
+                    href="https://thrustbatteries.com"
+                    target="_blank"
+                    style="
+                      color: #a9ceff;
+                      text-decoration: none;
+                      border-bottom: 1px dashed #00c3ff;
+                    "
+                    >thrustbatteries.com
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="font-size: 0.8rem; margin-left: 2px"
+                    ></i
+                  ></a>
+                </div>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap">
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #e34f26; color: white"
+                    >HTML5</span
+                  >
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #1572b6; color: white"
+                    >CSS3</span
+                  >
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #f7df1e; color: black"
+                    >JavaScript</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card 3: Giant Scaff & Maxonova -->
+            <div
+              class="experience_card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00f7ff;
+                padding: 25px;
+                border-radius: 8px;
+                width: 100%;
+                box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  margin-bottom: 15px;
+                "
+              >
+                <div>
+                  <h3
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.6rem;
+                      font-weight: 600;
+                    "
+                  >
+                    WordPress Developer – Giant Scaff & Maxonova
+                  </h3>
+                  <h4
+                    style="
+                      color: white;
+                      margin: 5px 0 0;
+                      font-size: 1.2rem;
+                      font-weight: normal;
+                    "
+                  >
+                    Giant Scaff & Maxonova — Freelance / Remote
+                  </h4>
+                </div>
+                <span
+                  style="
+                    color: #a9ceff;
+                    font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                    font-size: 1.1rem;
+                    background: rgba(0, 195, 255, 0.15);
+                    padding: 3px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #00c3ff;
+                  "
+                  >June – July 2026</span
+                >
+              </div>
+              <ul
+                style="
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: rgba(255, 255, 255, 0.85);
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  margin-bottom: 15px;
+                "
+              >
+                <li>Built and customized company websites using WordPress.</li>
+                <li>
+                  Engineered custom layouts, content architectures, inquiry
+                  forms, and mobile-friendly themes.
+                </li>
+                <li>
+                  Delivered complete end-to-end site setup with fast hosting
+                  configuration.
+                </li>
+              </ul>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                "
+              >
+                <div>
+                  <span style="color: #00c3ff; font-weight: bold"
+                    >Websites:</span
+                  >
+                  <a
+                    href="https://giantscaff.com"
+                    target="_blank"
+                    style="
+                      color: #a9ceff;
+                      text-decoration: none;
+                      border-bottom: 1px dashed #00c3ff;
+                    "
+                    >giantscaff.com
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="font-size: 0.8rem; margin-left: 2px"
+                    ></i
+                  ></a>
+                  <span style="color: white; margin: 0 5px">—</span>
+                  <a
+                    href="https://maxonova.com"
+                    target="_blank"
+                    style="
+                      color: #a9ceff;
+                      text-decoration: none;
+                      border-bottom: 1px dashed #00c3ff;
+                    "
+                    >maxonova.com
+                    <i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                      style="font-size: 0.8rem; margin-left: 2px"
+                    ></i
+                  ></a>
+                </div>
+                <div style="display: flex; gap: 5px; flex-wrap: wrap">
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #21759b; color: white"
+                    >WordPress</span
+                  >
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #1572b6; color: white"
+                    >CSS</span
+                  >
+                  <span
+                    class="portfolio_tag"
+                    style="background-color: #25afff; color: white"
+                    >Responsive</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Card 4: Thrift Store Platform -->
+            <div
+              class="experience_card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00f7ff;
+                padding: 25px;
+                border-radius: 8px;
+                width: 100%;
+                box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.1);
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-start;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  margin-bottom: 15px;
+                "
+              >
+                <div>
+                  <h3
+                    style="
+                      color: #00f7ff;
+                      margin: 0;
+                      font-size: 1.6rem;
+                      font-weight: 600;
+                    "
+                  >
+                    Full Stack Developer (Freelance)
+                  </h3>
+                  <h4
+                    style="
+                      color: white;
+                      margin: 5px 0 0;
+                      font-size: 1.2rem;
+                      font-weight: normal;
+                    "
+                  >
+                    Thrift Store Platform — Remote
+                  </h4>
+                </div>
+                <span
+                  style="
+                    color: #a9ceff;
+                    font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                    font-size: 1.1rem;
+                    background: rgba(0, 195, 255, 0.15);
+                    padding: 3px 10px;
+                    border-radius: 5px;
+                    border: 1px solid #00c3ff;
+                  "
+                  >2025</span
+                >
+              </div>
+              <ul
+                style="
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: rgba(255, 255, 255, 0.85);
+                  font-size: 1.1rem;
+                  line-height: 1.8;
+                  margin-bottom: 15px;
+                "
+              >
+                <li>
+                  Built a full-stack e-commerce platform using React, Node.js,
+                  Express, and MariaDB.
+                </li>
+                <li>
+                  Developed authentication, cart, checkout, and wishlist
+                  features.
+                </li>
+                <li>Built inventory and order management systems.</li>
+              </ul>
+              <div
+                style="
+                  display: flex;
+                  justify-content: flex-end;
+                  gap: 5px;
+                  flex-wrap: wrap;
+                "
+              >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #61dafb; color: black"
+                  >React</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #339933; color: white"
+                  >Node.js</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #303030; color: white"
+                  >Express</span
+                >
+                <span
+                  class="portfolio_tag"
+                  style="background-color: #00758f; color: white"
+                  >MariaDB</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio">
+        <div class="container">
+          <h2 class="section_title">
+            <span class="section_title_highlight">Projects</span>
+          </h2>
+          <div class="portfolio">
+            <!-- Portfolio Nav -->
+            <nav class="portfolio_nav">
               <ul>
                 <li>
-                  <strong>RESTful API Architecture:</strong> Clean routes, controller structure, and modular middleware.
+                  <button
+                    class="pfoNavBtn pfoWebBtn"
+                    onclick="pfoWeb()"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                    data-aos-offset="200"
+                  >
+                    Web Development Projects
+                  </button>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Portfolio Items -->
+            <div class="portfolio_items">
+              <!-- Portfolio Viewer -->
+              <div class="portfolio_viewer">
+                <span id="close_pv_btn" onclick="closePv()">×</span>
+              </div>
+
+              <!-- Video Viewer -->
+              <div class="video_viewer">
+                <span id="close_pv_btn" onclick="closeVv()">×</span>
+                <span class="loading_text lt2">Loading...</span>
+              </div>
+
+              <!-- Web Gallery -->
+              <div
+                class="web_gallery"
+                data-aos="fade"
+                data-aos-delay="500"
+                data-aos-offset="200"
+              ></div>
+
+              <!-- Photo Gallery -->
+              <div class="photo_gallery">
+                <!-- Add your graphics design images here if you have them -->
+              </div>
+
+              <!-- Video Gallery -->
+              <div class="video_gallery">
+                <!-- Add your video editing videos here if you have them -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership & Activities Section -->
+      <section id="leadership">
+        <div class="container">
+          <h2 class="section_title">
+            Leadership & <span class="section_title_highlight">Activities</span>
+          </h2>
+
+          <div
+            class="leadership_cards"
+            style="
+              display: flex;
+              flex-direction: row;
+              gap: 30px;
+              margin-top: 30px;
+              width: 100%;
+              flex-wrap: wrap;
+            "
+          >
+            <!-- Leadership Card 1 -->
+            <div
+              class="leadership_card"
+              data-aos="fade-up"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00f7ff;
+                padding: 25px;
+                border-radius: 8px;
+                width: 47%;
+                min-width: 285px;
+                flex-grow: 1;
+                box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.15);
+              "
+            >
+              <div style="margin-bottom: 15px">
+                <h3
+                  style="
+                    color: #00f7ff;
+                    margin: 0;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                  "
+                >
+                  IoT Group Project
+                </h3>
+                <h4
+                  style="
+                    color: white;
+                    margin: 5px 0 0;
+                    font-size: 1.15rem;
+                    font-weight: normal;
+                  "
+                >
+                  Team Leader — Invertis University
+                </h4>
+                <span
+                  style="
+                    color: #a9ceff;
+                    font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                    font-size: 1rem;
+                    display: block;
+                    margin-top: 5px;
+                  "
+                  >Sept 2022 – Jan 2023</span
+                >
+              </div>
+              <ul
+                style="
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: rgba(255, 255, 255, 0.85);
+                  font-size: 1.1rem;
+                  line-height: 1.7;
+                "
+              >
+                <li>
+                  Led a team of 10 members to simulate a smart kitchen using
+                  Arduino Uno on Tinkercad.
                 </li>
                 <li>
-                  <strong>Authentication & Security:</strong> JWT authentication, secure cookies, and role-based authorization.
+                  Developed modules for gas detection (MQ2), smart exhaust fan
+                  (DHT11), and auto-lighting (PIR sensor).
                 </li>
                 <li>
-                  <strong>Database Design:</strong> MongoDB schema modeling, Mongoose ODM validation, and CRUD operations.
-                </li>
-                <li>
-                  <strong>Media & Cloud Integration:</strong> Cloudinary asset storage and automated cloud deployments.
+                  Successfully managed project timelines, resources, and team
+                  members.
                 </li>
               </ul>
             </div>
-            <a href="#contact">Get Your Quote</a>
-          </div>
 
-          <!-- Service Card 2: React & Frontend -->
-          <div class="service_card" data-aos="fade-up" data-aos-delay="100">
-            <div class="service_card_text">
-              <h4>React & Frontend Engineering</h4>
-              <p>
-                Dynamic, interactive, and responsive user interfaces built with modern JavaScript ecosystems:
-              </p>
-              <ul>
+            <!-- Leadership Card 2 -->
+            <div
+              class="leadership_card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00f7ff;
+                padding: 25px;
+                border-radius: 8px;
+                width: 47%;
+                min-width: 285px;
+                flex-grow: 1;
+                box-shadow: 0px 0px 15px rgba(0, 247, 255, 0.15);
+              "
+            >
+              <div style="margin-bottom: 15px">
+                <h3
+                  style="
+                    color: #00f7ff;
+                    margin: 0;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                  "
+                >
+                  I-Tech Club
+                </h3>
+                <h4
+                  style="
+                    color: white;
+                    margin: 5px 0 0;
+                    font-size: 1.15rem;
+                    font-weight: normal;
+                  "
+                >
+                  Team Member — Invertis University
+                </h4>
+                <span
+                  style="
+                    color: #a9ceff;
+                    font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                    font-size: 1rem;
+                    display: block;
+                    margin-top: 5px;
+                  "
+                  >Jan 2022 – Feb 2023</span
+                >
+              </div>
+              <ul
+                style="
+                  list-style-type: disc;
+                  padding-left: 20px;
+                  color: rgba(255, 255, 255, 0.85);
+                  font-size: 1.1rem;
+                  line-height: 1.7;
+                "
+              >
                 <li>
-                  <strong>React Applications:</strong> Component architecture using React Hooks, Context API, and state management.
+                  Organized coding competitions (C++, C, Java, and Python) and
+                  technical workshops (Web3).
                 </li>
                 <li>
-                  <strong>Modern CSS & Frameworks:</strong> Pixel-perfect styling with Tailwind CSS, Bootstrap, and CSS3 animations.
-                </li>
-                <li>
-                  <strong>Technical SEO & Speed:</strong> Meta tag optimization, React Helmet, sitemaps, and core web vitals.
-                </li>
-                <li>
-                  <strong>Cross-Browser Compatibility:</strong> Consistent layout and interactivity across desktop and mobile.
+                  Contributed to organizing annual college events, planning,
+                  coordination, and execution.
                 </li>
               </ul>
             </div>
-            <a href="#contact">Get Your Quote</a>
-          </div>
-
-          <!-- Service Card 3: WordPress & CMS -->
-          <div class="service_card" data-aos="fade-up" data-aos-delay="200">
-            <div class="service_card_text">
-              <h4>WordPress & CMS Websites</h4>
-              <p>
-                Custom business websites engineered with WordPress, tailored for branding, lead generation, and ease of management:
-              </p>
-              <ul>
-                <li>
-                  <strong>Custom Theme Configuration:</strong> Tailored brand styling, responsive typography, and navigation.
-                </li>
-                <li>
-                  <strong>Lead Capture & Inquiries:</strong> Interactive contact forms, quote calculators, and conversion tracking.
-                </li>
-                <li>
-                  <strong>Performance & Security:</strong> Caching, asset minification, and security hardening.
-                </li>
-                <li>
-                  <strong>Hosting & Domain Setup:</strong> Complete deployment on Hostinger, cPanel, or cloud hosting.
-                </li>
-              </ul>
-            </div>
-            <a href="#contact">Get Your Quote</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
+      <!-- Services -->
+      <section id="services">
+        <div class="container">
+          <h2 class="section_title" data-aos="fade">
+            <span class="section_title_highlight">Services</span> I offer
+          </h2>
+          <p class="section_info">
+            I provide full-stack web development, modern frontend engineering,
+            and custom WordPress solutions tailored to business needs and
+            scalability. Below is an overview of my core services.
+          </p>
 
-    <!-- Contact -->
-    <section id="contact">
-      <div class="container">
+          <!-- Service Cards -->
+          <div class="service_cards">
+            <!-- Service Card 1: Full-Stack & MERN -->
+            <div class="service_card" data-aos="fade-up" data-aos-delay="0">
+              <div class="service_card_text">
+                <h4>Full-Stack & MERN Solutions</h4>
+                <p>
+                  End-to-end web applications engineered with Node.js, Express,
+                  React, and MongoDB for scalable business workflows:
+                </p>
+                <ul>
+                  <li>
+                    <strong>RESTful API Architecture:</strong> Clean routes,
+                    controller structure, and modular middleware.
+                  </li>
+                  <li>
+                    <strong>Authentication & Security:</strong> JWT
+                    authentication, secure cookies, and role-based
+                    authorization.
+                  </li>
+                  <li>
+                    <strong>Database Design:</strong> MongoDB schema modeling,
+                    Mongoose ODM validation, and CRUD operations.
+                  </li>
+                  <li>
+                    <strong>Media & Cloud Integration:</strong> Cloudinary asset
+                    storage and automated cloud deployments.
+                  </li>
+                </ul>
+              </div>
+              <a href="#contact">Get Your Quote</a>
+            </div>
+
+            <!-- Service Card 2: React & Frontend -->
+            <div class="service_card" data-aos="fade-up" data-aos-delay="100">
+              <div class="service_card_text">
+                <h4>React & Frontend Engineering</h4>
+                <p>
+                  Dynamic, interactive, and responsive user interfaces built
+                  with modern JavaScript ecosystems:
+                </p>
+                <ul>
+                  <li>
+                    <strong>React Applications:</strong> Component architecture
+                    using React Hooks, Context API, and state management.
+                  </li>
+                  <li>
+                    <strong>Modern CSS & Frameworks:</strong> Pixel-perfect
+                    styling with Tailwind CSS, Bootstrap, and CSS3 animations.
+                  </li>
+                  <li>
+                    <strong>Technical SEO & Speed:</strong> Meta tag
+                    optimization, React Helmet, sitemaps, and core web vitals.
+                  </li>
+                  <li>
+                    <strong>Cross-Browser Compatibility:</strong> Consistent
+                    layout and interactivity across desktop and mobile.
+                  </li>
+                </ul>
+              </div>
+              <a href="#contact">Get Your Quote</a>
+            </div>
+
+            <!-- Service Card 3: WordPress & CMS -->
+            <div class="service_card" data-aos="fade-up" data-aos-delay="200">
+              <div class="service_card_text">
+                <h4>WordPress & CMS Websites</h4>
+                <p>
+                  Custom business websites engineered with WordPress, tailored
+                  for branding, lead generation, and ease of management:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Custom Theme Configuration:</strong> Tailored brand
+                    styling, responsive typography, and navigation.
+                  </li>
+                  <li>
+                    <strong>Lead Capture & Inquiries:</strong> Interactive
+                    contact forms, quote calculators, and conversion tracking.
+                  </li>
+                  <li>
+                    <strong>Performance & Security:</strong> Caching, asset
+                    minification, and security hardening.
+                  </li>
+                  <li>
+                    <strong>Hosting & Domain Setup:</strong> Complete deployment
+                    on Hostinger, cPanel, or cloud hosting.
+                  </li>
+                </ul>
+              </div>
+              <a href="#contact">Get Your Quote</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
           <h2 class="section_title" data-aos="fade" data-aos-offset="50">
-              Let's say <span class="section_title_highlight">Hi!</span>
+            Let's say <span class="section_title_highlight">Hi!</span>
           </h2>
           <div class="contact_form_container">
-              <form
-                  action="https://formspree.io/f/xkgjooav" 
-                  method="POST"
-                  class="contact_form"
-                  data-aos="fade"
+            <form
+              action="https://formspree.io/f/xkgjooav"
+              method="POST"
+              class="contact_form"
+              data-aos="fade"
+            >
+              <input type="text" name="Name" placeholder="Name" required />
+              <input type="email" name="Email" placeholder="Email" required />
+              <textarea
+                cols="30"
+                rows="10"
+                name="Message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+
+            <!-- Contact Details Card -->
+            <div
+              class="contact_details_card"
+              data-aos="fade"
+              data-aos-delay="200"
+              style="
+                background: rgba(255, 255, 255, 0.05);
+                border: 2px solid #00c3ff;
+                padding: 25px 30px;
+                border-radius: 5px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                color: #25afff;
+                font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+              "
+            >
+              <h3
+                style="
+                  color: white;
+                  font-family: &quot;Ubuntu Mono&quot;, sans-serif;
+                  font-size: 1.8rem;
+                  border-bottom: 2px solid #00c3ff;
+                  padding-bottom: 10px;
+                  margin-bottom: 10px;
+                  font-weight: 600;
+                "
               >
-                  <input type="text" name="Name" placeholder="Name" required />
-                  <input type="email" name="Email" placeholder="Email" required />
-                  <textarea
-                    cols="30"
-                    rows="10"
-                    name="Message"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                  <button type="submit">Send</button>
-              </form>
-              
-              <!-- Contact Details Card -->
-              <div class="contact_details_card" data-aos="fade" data-aos-delay="200" style="background: rgba(255, 255, 255, 0.05); border: 2px solid #00c3ff; padding: 25px 30px; border-radius: 5px; height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 20px; color: #25afff; font-family: 'Ubuntu Mono', sans-serif;">
-                <h3 style="color: white; font-family: 'Ubuntu Mono', sans-serif; font-size: 1.8rem; border-bottom: 2px solid #00c3ff; padding-bottom: 10px; margin-bottom: 10px; font-weight: 600;">Contact Details</h3>
-                
-                <div style="display: flex; align-items: center; gap: 15px;">
-                  <i class="fa-solid fa-envelope" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
-                  <div>
-                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">EMAIL</span>
-                    <a href="mailto:workwitharyan498@gmail.com" style="color: white; text-decoration: none; font-size: 1.1rem;">workwitharyan498@gmail.com</a>
-                  </div>
-                </div>
+                Contact Details
+              </h3>
 
-                <div style="display: flex; align-items: center; gap: 15px;">
-                  <i class="fa-solid fa-phone" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
-                  <div>
-                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">PHONE</span>
-                    <a href="tel:+917453849001" style="color: white; text-decoration: none; font-size: 1.1rem;">+91 74538 49001</a>
-                  </div>
-                </div>
-
-                <div style="display: flex; align-items: center; gap: 15px;">
-                  <i class="fa-solid fa-location-dot" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
-                  <div>
-                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">LOCATION</span>
-                    <span style="color: white; font-size: 1.1rem;">Ghaziabad, India</span>
-                  </div>
-                </div>
-
-                <div style="display: flex; align-items: center; gap: 15px;">
-                  <i class="fa-brands fa-github" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
-                  <div>
-                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">GITHUB</span>
-                    <a href="https://github.com/Aryan-onGithub" target="_blank" style="color: white; text-decoration: none; font-size: 1.1rem;">Aryan-onGithub</a>
-                  </div>
-                </div>
-
-                <div style="display: flex; align-items: center; gap: 15px;">
-                  <i class="fa-brands fa-linkedin-in" style="font-size: 1.5rem; color: #00c3ff; width: 25px;"></i>
-                  <div>
-                    <span style="display: block; color: rgba(255,255,255,0.6); font-size: 0.9rem;">LINKEDIN</span>
-                    <a href="https://www.linkedin.com/in/aryan-chandra/" target="_blank" style="color: white; text-decoration: none; font-size: 1.1rem;">aryan-chandra</a>
-                  </div>
+              <div style="display: flex; align-items: center; gap: 15px">
+                <i
+                  class="fa-solid fa-envelope"
+                  style="font-size: 1.5rem; color: #00c3ff; width: 25px"
+                ></i>
+                <div>
+                  <span
+                    style="
+                      display: block;
+                      color: rgba(255, 255, 255, 0.6);
+                      font-size: 0.9rem;
+                    "
+                    >EMAIL</span
+                  >
+                  <a
+                    href="mailto:workwitharyan498@gmail.com"
+                    style="
+                      color: white;
+                      text-decoration: none;
+                      font-size: 1.1rem;
+                    "
+                    >workwitharyan498@gmail.com</a
+                  >
                 </div>
               </div>
+
+              <div style="display: flex; align-items: center; gap: 15px">
+                <i
+                  class="fa-solid fa-phone"
+                  style="font-size: 1.5rem; color: #00c3ff; width: 25px"
+                ></i>
+                <div>
+                  <span
+                    style="
+                      display: block;
+                      color: rgba(255, 255, 255, 0.6);
+                      font-size: 0.9rem;
+                    "
+                    >PHONE</span
+                  >
+                  <a
+                    href="tel:+917453849001"
+                    style="
+                      color: white;
+                      text-decoration: none;
+                      font-size: 1.1rem;
+                    "
+                    >+91 74538 49001</a
+                  >
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 15px">
+                <i
+                  class="fa-solid fa-location-dot"
+                  style="font-size: 1.5rem; color: #00c3ff; width: 25px"
+                ></i>
+                <div>
+                  <span
+                    style="
+                      display: block;
+                      color: rgba(255, 255, 255, 0.6);
+                      font-size: 0.9rem;
+                    "
+                    >LOCATION</span
+                  >
+                  <span style="color: white; font-size: 1.1rem"
+                    >Ghaziabad, India</span
+                  >
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 15px">
+                <i
+                  class="fa-brands fa-github"
+                  style="font-size: 1.5rem; color: #00c3ff; width: 25px"
+                ></i>
+                <div>
+                  <span
+                    style="
+                      display: block;
+                      color: rgba(255, 255, 255, 0.6);
+                      font-size: 0.9rem;
+                    "
+                    >GITHUB</span
+                  >
+                  <a
+                    href="https://github.com/Aryan-onGithub"
+                    target="_blank"
+                    style="
+                      color: white;
+                      text-decoration: none;
+                      font-size: 1.1rem;
+                    "
+                    >Aryan-onGithub</a
+                  >
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 15px">
+                <i
+                  class="fa-brands fa-linkedin-in"
+                  style="font-size: 1.5rem; color: #00c3ff; width: 25px"
+                ></i>
+                <div>
+                  <span
+                    style="
+                      display: block;
+                      color: rgba(255, 255, 255, 0.6);
+                      font-size: 0.9rem;
+                    "
+                    >LINKEDIN</span
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/aryan-chandra/"
+                    target="_blank"
+                    style="
+                      color: white;
+                      text-decoration: none;
+                      font-size: 1.1rem;
+                    "
+                    >aryan-chandra</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
-  </section>
-
-    <!-- Socials -->
-    <section id="socials">
-      <div class="container social_handles_container">
-        <h4 data-aos="zoom-in-up">Handles</h4>
-
-        <!-- Social Handles -->
-        <div class="social_handles">
-          <a href="https://github.com/Aryan-onGithub" 
-            target="_blank"
-            data-aos="fade-up"
-            ><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/aryan-chandra/"
-            target="_blank"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            ><i class="fa-brands fa-linkedin-in"></i></a>
-          
         </div>
-      </div>
+      </section>
 
-      <!-- Email -->
-      <span style="
+      <!-- Socials -->
+      <section id="socials">
+        <div class="container social_handles_container">
+          <h4 data-aos="zoom-in-up">Handles</h4>
+
+          <!-- Social Handles -->
+          <div class="social_handles">
+            <a
+              href="https://github.com/Aryan-onGithub"
+              target="_blank"
+              data-aos="fade-up"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/aryan-chandra/"
+              target="_blank"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <span
+          style="
             display: block;
             text-align: center;
             padding: 40px 10px 0px;
             color: white;
             font-weight: bold;
-          " data-aos="fade" data-aos-delay="300">
-        ✉:
-        <a href="mailto:workwitharyan498@gmail.com" 
-          style="color: #00c3ff; text-decoration: none; font-size: 18px"
-          >workwitharyan498@gmail.com</a>
-      </span>
-    </section>
+          "
+          data-aos="fade"
+          data-aos-delay="300"
+        >
+          ✉:
+          <a
+            href="mailto:workwitharyan498@gmail.com"
+            style="color: #00c3ff; text-decoration: none; font-size: 18px"
+            >workwitharyan498@gmail.com</a
+          >
+        </span>
+      </section>
 
-    <!-- Cursor -->
-    <div id="cursor_outer"></div>
-    <div id="cursor_inner"></div>
-  </main>
+      <!-- Cursor -->
+      <div id="cursor_outer"></div>
+      <div id="cursor_inner"></div>
+    </main>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="container">
-      <span>Copyright © 2026 ARYAN CHANDRA</span>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <span>Copyright © 2026 ARYAN CHANDRA</span>
+      </div>
+    </footer>
 
-  <!-- Link jquery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Link jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- Link Typed.JS -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed("#type_text", {
-      strings: ["Full Stack Developer", "React Developer", "MERN Stack Developer", "Frontend Developer"],
-      typeSpeed: 40,
-      backSpeed: 40,
-      loop: true,
-    });
-  </script>
+    <!-- Link Typed.JS -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#type_text", {
+        strings: [
+          "Full Stack Developer",
+          "React Developer",
+          "MERN Stack Developer",
+          "Frontend Developer",
+        ],
+        typeSpeed: 40,
+        backSpeed: 40,
+        loop: true,
+      });
+    </script>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- AOS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  <!-- Link JS -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Link JS -->
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
