@@ -728,36 +728,18 @@
   }
 
   .education_timeline {
-    flex-direction: column;
-    transform: scale(1);
-    gap: 50px;
-    margin-top: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px auto;
   }
 
   .education_timeline_tag {
-    padding: 5px 10px;
-  }
-
-  .education_timeline_tag::before {
-    top: initial;
-    right: initial;
-    left: 50%;
-    bottom: -50px;
-    transform: translateX(-50%);
-    height: 50px;
-    width: 3px;
-    background: #00c3ff;
-  }
-
-  .education_timeline_tag::after {
-    top: initial;
-    bottom: -35px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-top: 10px solid #00c3ff;
-    border-bottom: none;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    width: auto;
+    max-width: 100%;
   }
 
   .education_cards {

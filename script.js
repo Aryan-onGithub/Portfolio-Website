@@ -108,7 +108,7 @@ function typeText() {
           ✉: <a href="mailto:workwitharyan498@gmail.com" style="color: white; text-decoration: none; font-size: 16px;">workwitharyan498@gmail.com</a>
           <br/>
           <div style="margin-bottom: 10px"></div>
-          BCA graduate and Full Stack Developer. Currently pursuing a physical training program in MERN Stack at DUCAT to emerge as a Full Stack Web Developer.
+          Full Stack Developer & BCA Graduate with specialized MERN Stack training from DUCAT. Experienced in React, Node.js, Express, MongoDB, and delivering live client websites.
           <br/>
           <div style="margin-bottom: 15px"></div>
           🔗: <a href="https://github.com/Aryan-onGithub" target="_blank" class="front_social_link">
@@ -149,10 +149,25 @@ var portfolioContent = [
       languages: `<span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
                   <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
                   <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
+                  <span class="portfolio_tag" style="background-color: #10B981; color: white">React Helmet</span>
+                  <span class="portfolio_tag" style="background-color: #25afff; color: white">Technical SEO</span>
+                 `,
+      desc: "Developed and maintained the official Nature Sampann website using React. Handled website updates, troubleshooting, performance optimization, and technical SEO (meta tags, sitemaps, React Helmet).",
+      link: "https://naturesampann.com",
+      github: "",
+      featured: true,
+      status: "Live"
+    },
+    {
+      image: "./media/thrustbatteries.png",
+      name: "Thrust Batteries",
+      languages: `<span class="portfolio_tag" style="background-color: #e34f26; color: white">HTML5</span>
+                  <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS3</span>
+                  <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
                   <span class="portfolio_tag" style="background-color: #25afff; color: white">Responsive</span>
                  `,
-      desc: "Developed and maintained the official website for Nature Sampann, an agro-commodity company. Built responsive pages including Products, Gallery, About, and Contact while improving the company's digital presence.",
-      link: "https://naturesampann.com",
+      desc: "Independently built the complete business website from scratch using HTML, CSS, and JavaScript. Engineered responsive product displays and clean performance-focused UI.",
+      link: "https://thrustbatteries.com",
       github: "",
       featured: true,
       status: "Live"
@@ -164,22 +179,35 @@ var portfolioContent = [
                   <span class="portfolio_tag" style="background-color: #38BDF8; color: white">Tailwind CSS</span>
                   <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
                  `,
-      desc: "Designed and developed a modern startup landing page focused on connecting businesses with digital talent. Built with a strong emphasis on branding, lead generation, and responsive user experience.",
+      desc: "Designed and developed a responsive startup landing page focused on branding and lead generation. Built with a strong emphasis on modern aesthetics and conversion.",
       link: "https://neo-port.netlify.app/",
       github: "",
       featured: true,
       status: "Live"
     },
     {
-      image: "./media/atk.png",
-      name: "ATK Designs",
-      languages: `<span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
-                  <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
+      image: "./media/giantscaff.png",
+      name: "Giant Scaff & Maxonova",
+      languages: `<span class="portfolio_tag" style="background-color: #21759B; color: white">WordPress</span>
                   <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
+                  <span class="portfolio_tag" style="background-color: #25afff; color: white">Responsive</span>
                  `,
-      desc: "Collaborated on the contact section, blog section, and deployment workflow for the ATK Designs website.",
-      link: "https://atk-designs.com/",
+      desc: "Built and customized company websites using WordPress. Engineered custom layouts, content architectures, inquiry forms, and mobile-friendly themes.",
+      link: "https://giantscaff.com",
       github: "",
+      featured: false,
+      status: "Live"
+    },
+    {
+      image: "./media/crudapp.png",
+      name: "CRUD Todo List Web App",
+      languages: `<span class="portfolio_tag" style="background-color: #e34f26; color: white">HTML</span>
+                  <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
+                  <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
+                 `,
+      desc: "Built a responsive JavaScript Todo app with task creation, editing, deletion, and status management.",
+      link: "https://aryan-ongithub.github.io/CRUD-TODO-LIST-webApp/",
+      github: "https://github.com/Aryan-onGithub/CRUD-TODO-LIST-webApp/",
       featured: false,
       status: "Live"
     },
@@ -193,19 +221,6 @@ var portfolioContent = [
                  `,
       desc: "Developed a case tracking system to manage and monitor intellectual property cases. Implemented CRUD functionality, record handling, and workflow management.",
       link: "",
-      github: "",
-      featured: true,
-      status: "Live"
-    },
-    {
-      image: "./media/clientportfolio.png",
-      name: "Client Video Portfolio",
-      languages: `<span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
-                  <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
-                  <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
-                 `,
-      desc: "Created a creative portfolio platform to showcase video editing and content creation work. Designed responsive layouts with a strong focus on visual presentation and user engagement.",
-      link: "https://parthvideoportfolio.netlify.app/",
       github: "",
       featured: false,
       status: "Live"
@@ -225,15 +240,15 @@ var portfolioContent = [
       status: "Under Development"
     },
     {
-      image: "./media/crudapp.png",
-      name: "CRUD Web App",
-      languages: `<span class="portfolio_tag" style="background-color: #e34f26; color: white">HTML</span>
-                  <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
+      image: "./media/clientportfolio.png",
+      name: "Client Video Portfolio",
+      languages: `<span class="portfolio_tag" style="background-color: #61DAFB; color: black">React</span>
                   <span class="portfolio_tag" style="background-color: #f7df1e; color: black">JavaScript</span>
+                  <span class="portfolio_tag" style="background-color: #1572b6; color: white">CSS</span>
                  `,
-      desc: "Built a responsive task management application with complete CRUD functionality. Users can create, update, delete, and organize tasks efficiently.",
-      link: "https://aryan-ongithub.github.io/CRUD-TODO-LIST-webApp/",
-      github: "https://github.com/Aryan-onGithub/CRUD-TODO-LIST-webApp/",
+      desc: "Created a creative portfolio platform to showcase video editing and content creation work. Designed responsive layouts with a strong focus on visual presentation and user engagement.",
+      link: "https://parthvideoportfolio.netlify.app/",
+      github: "",
       featured: false,
       status: "Live"
     },
